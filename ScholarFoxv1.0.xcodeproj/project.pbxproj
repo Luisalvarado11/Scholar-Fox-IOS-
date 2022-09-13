@@ -14,6 +14,8 @@
 		A07CC4A728D1099500F641C8 /* ScholarFoxv1_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CC4A628D1099500F641C8 /* ScholarFoxv1_0Tests.swift */; };
 		A07CC4B128D1099500F641C8 /* ScholarFoxv1_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CC4B028D1099500F641C8 /* ScholarFoxv1_0UITests.swift */; };
 		A07CC4B328D1099500F641C8 /* ScholarFoxv1_0UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CC4B228D1099500F641C8 /* ScholarFoxv1_0UITestsLaunchTests.swift */; };
+		A07CC4C028D109A700F641C8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A07CC4BF28D109A700F641C8 /* .gitignore */; };
+		A07CC4C228D109BC00F641C8 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = A07CC4C128D109BC00F641C8 /* .gitattributes */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		A07CC4AC28D1099500F641C8 /* ScholarFoxv1.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScholarFoxv1.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07CC4B028D1099500F641C8 /* ScholarFoxv1_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScholarFoxv1_0UITests.swift; sourceTree = "<group>"; };
 		A07CC4B228D1099500F641C8 /* ScholarFoxv1_0UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScholarFoxv1_0UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A07CC4BF28D109A700F641C8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A07CC4C128D109BC00F641C8 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 		A07CC48928D1099400F641C8 = {
 			isa = PBXGroup;
 			children = (
+				A07CC4BF28D109A700F641C8 /* .gitignore */,
+				A07CC4C128D109BC00F641C8 /* .gitattributes */,
 				A07CC49428D1099400F641C8 /* ScholarFoxv1.0 */,
 				A07CC4A528D1099500F641C8 /* ScholarFoxv1.0Tests */,
 				A07CC4AF28D1099500F641C8 /* ScholarFoxv1.0UITests */,
@@ -95,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				A07CC49528D1099400F641C8 /* ScholarFoxv1_0App.swift */,
+				A07CC4C428D10A1500F641C8 /* UniversityView */,
+				A07CC4C328D10A0B00F641C8 /* Approximator */,
 				A07CC49728D1099400F641C8 /* ContentView.swift */,
 				A07CC49928D1099500F641C8 /* Assets.xcassets */,
 				A07CC49B28D1099500F641C8 /* Preview Content */,
@@ -125,6 +133,20 @@
 				A07CC4B228D1099500F641C8 /* ScholarFoxv1_0UITestsLaunchTests.swift */,
 			);
 			path = ScholarFoxv1.0UITests;
+			sourceTree = "<group>";
+		};
+		A07CC4C328D10A0B00F641C8 /* Approximator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Approximator;
+			sourceTree = "<group>";
+		};
+		A07CC4C428D10A1500F641C8 /* UniversityView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UniversityView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +254,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A07CC49D28D1099500F641C8 /* Preview Assets.xcassets in Resources */,
+				A07CC4C028D109A700F641C8 /* .gitignore in Resources */,
 				A07CC49A28D1099500F641C8 /* Assets.xcassets in Resources */,
+				A07CC4C228D109BC00F641C8 /* .gitattributes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
