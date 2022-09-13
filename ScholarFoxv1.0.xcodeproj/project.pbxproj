@@ -16,6 +16,7 @@
 		A07CC4B328D1099500F641C8 /* ScholarFoxv1_0UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CC4B228D1099500F641C8 /* ScholarFoxv1_0UITestsLaunchTests.swift */; };
 		A07CC4C028D109A700F641C8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A07CC4BF28D109A700F641C8 /* .gitignore */; };
 		A07CC4C228D109BC00F641C8 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = A07CC4C128D109BC00F641C8 /* .gitattributes */; };
+		A976D37F28D1186800E04388 /* user_assumptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976D37E28D1186800E04388 /* user_assumptions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		A07CC4B228D1099500F641C8 /* ScholarFoxv1_0UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScholarFoxv1_0UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A07CC4BF28D109A700F641C8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A07CC4C128D109BC00F641C8 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		A976D37E28D1186800E04388 /* user_assumptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user_assumptions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		A07CC49428D1099400F641C8 /* ScholarFoxv1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				A976D37D28D1182D00E04388 /* Assumptions */,
 				A07CC49528D1099400F641C8 /* ScholarFoxv1_0App.swift */,
 				A07CC4C428D10A1500F641C8 /* UniversityView */,
 				A07CC4C328D10A0B00F641C8 /* Approximator */,
@@ -147,6 +150,14 @@
 			children = (
 			);
 			path = UniversityView;
+			sourceTree = "<group>";
+		};
+		A976D37D28D1182D00E04388 /* Assumptions */ = {
+			isa = PBXGroup;
+			children = (
+				A976D37E28D1186800E04388 /* user_assumptions.swift */,
+			);
+			path = Assumptions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A976D37F28D1186800E04388 /* user_assumptions.swift in Sources */,
 				A07CC49828D1099400F641C8 /* ContentView.swift in Sources */,
 				A07CC49628D1099400F641C8 /* ScholarFoxv1_0App.swift in Sources */,
 			);
