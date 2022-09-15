@@ -18,9 +18,11 @@ struct Universities: View {
                 
                 Text("California State Universities")
                     .font(.title3)
-                    .fontWeight(.ultraLight)
+                    .fontWeight(.semibold)
+                    .multilineTextAlignment(.leading)
                     .padding()
                 
+                CSUScoll()
                 Spacer()
                 
                 Text("University of California")

@@ -18,6 +18,8 @@
 		A07CC4C228D109BC00F641C8 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = A07CC4C128D109BC00F641C8 /* .gitattributes */; };
 		A07CC4C628D10C7C00F641C8 /* Universities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CC4C528D10C7C00F641C8 /* Universities.swift */; };
 		A07CC4C828D10CBE00F641C8 /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CC4C728D10CBE00F641C8 /* University.swift */; };
+		A07FCD2928D2E80C00817985 /* CSUCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07FCD2828D2E80C00817985 /* CSUCardView.swift */; };
+		A07FCD2B28D3A2C200817985 /* CSUScoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07FCD2A28D3A2C200817985 /* CSUScoll.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		A07CC4C128D109BC00F641C8 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		A07CC4C528D10C7C00F641C8 /* Universities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Universities.swift; sourceTree = "<group>"; };
 		A07CC4C728D10CBE00F641C8 /* University.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
+		A07FCD2828D2E80C00817985 /* CSUCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSUCardView.swift; sourceTree = "<group>"; };
+		A07FCD2A28D3A2C200817985 /* CSUScoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSUScoll.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,8 @@
 			children = (
 				A07CC4C528D10C7C00F641C8 /* Universities.swift */,
 				A07CC4C728D10CBE00F641C8 /* University.swift */,
+				A07FCD2828D2E80C00817985 /* CSUCardView.swift */,
+				A07FCD2A28D3A2C200817985 /* CSUScoll.swift */,
 			);
 			path = UniversityView;
 			sourceTree = "<group>";
@@ -288,8 +294,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A07CC4C628D10C7C00F641C8 /* Universities.swift in Sources */,
+				A07FCD2B28D3A2C200817985 /* CSUScoll.swift in Sources */,
 				A07CC4C828D10CBE00F641C8 /* University.swift in Sources */,
 				A07CC49828D1099400F641C8 /* ContentView.swift in Sources */,
+				A07FCD2928D2E80C00817985 /* CSUCardView.swift in Sources */,
 				A07CC49628D1099400F641C8 /* ScholarFoxv1_0App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
