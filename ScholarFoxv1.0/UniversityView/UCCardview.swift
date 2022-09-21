@@ -1,52 +1,53 @@
 //
-//  CSUCardView.swift
+//  UCCardview.swift
 //  ScholarFoxv1.0
 //
-//  Created by Luis Alvarado on 9/14/22.
+//  Created by Luis Alvarado on 9/15/22.
 //
 
 import SwiftUI
 
-struct CSUCardView: View {
-    var csucard: University
+struct UCCardview: View {
+    var uccard: Uuniversity
     var body: some View {
         VStack {
             VStack(alignment: .leading, spacing: 0) {
-                Image(csucard.image)
+                Image(uccard.image)
                     .resizable()
                     .scaledToFit()
             }
             VStack(alignment: .leading, spacing: 12) {
-                Text(csucard.name)
+                Text(uccard.name)
                     .font(.system(.title, design: .serif))
                     .fontWeight(.bold)
                     .lineLimit(2)
                 HStack(alignment: .center, spacing: 12) {
-                    Text(csucard.city)
+                    Text(uccard.city)
                         .font(.system(.body, design: .serif))
-                    Text(csucard.acceptanceRating)
+                    Text(uccard.acceptanceRating)
                         .font(.system(.body, design: .serif))
                 }
                 HStack(alignment: .center, spacing: 12) {
-                    Text(csucard.average_cost)
+                    Text(uccard.average_cost)
                         .font(.system(.body, design: .serif))
-                    Text(csucard.minimum_gpa)
+                    
+                    Text(uccard.minimum_gpa)
                         .font(.system(.body, design: .serif))
                 }
-                Link(destination:URL(string: csucard.recommendations)!, label: {
+                Link(destination:URL(string: uccard.recommendations)!, label: {
                     Label(
                         title: {Text("Apply")},
                         icon: {Image(systemName: "paperplane.fill")})
                 })
             }
+            .padding()
+            .padding(.bottom, 12)
         }
-        .padding()
     }
 }
 
-struct CSUCardView_Previews: PreviewProvider {
+struct UCCardview_Previews: PreviewProvider {
     static var previews: some View {
-        CSUCardView(csucard: csu[0])
-            .previewLayout(.sizeThatFits)
+        UCCardview(uccard: uc[0])
     }
 }

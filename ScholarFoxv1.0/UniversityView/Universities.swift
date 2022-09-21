@@ -17,18 +17,24 @@ struct Universities: View {
                     .padding()
                 
                 Text("California State Universities")
-                    .font(.title3)
+                    .font(.title2)
                     .fontWeight(.semibold)
                     .multilineTextAlignment(.leading)
                     .padding()
                 
+                //Calls in CSUScroll UI viewpage
                 CSUScoll()
                 Spacer()
                 
                 Text("University of California")
-                    .font(.title3)
-                    .fontWeight(.ultraLight)
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                    .multilineTextAlignment(.leading)
                     .padding()
+                
+                //Calls in UCScroll UI viewpage
+                UCScroll()
+                Spacer()
             }
         }
     }
