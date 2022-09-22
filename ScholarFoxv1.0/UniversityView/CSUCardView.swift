@@ -15,6 +15,7 @@ struct CSUCardView: View {
                 Image(csucard.image)
                     .resizable()
                     .scaledToFit()
+                    .cornerRadius(25)
             }
             VStack(alignment: .leading, spacing: 12) {
                 Text(csucard.name)
@@ -35,7 +36,8 @@ struct CSUCardView: View {
                 }
                 Link(destination:URL(string: csucard.recommendations)!, label: {
                     Label(
-                        title: {Text("Apply")},
+                        title: {Text("Apply")
+                            .foregroundColor(Color.blue)},
                         icon: {Image(systemName: "paperplane.fill")})
                 })
             }

@@ -159,10 +159,10 @@
 			children = (
 				A07CC4C728D10CBE00F641C8 /* University.swift */,
 				A07CC4C528D10C7C00F641C8 /* Universities.swift */,
-				A0C3B53828D9710300171DBC /* UCScroll.swift */,
 				A07FCD2828D2E80C00817985 /* CSUCardView.swift */,
-				A07FCD2A28D3A2C200817985 /* CSUScoll.swift */,
 				A07FCD2C28D3C51D00817985 /* UCCardview.swift */,
+				A0C3B53828D9710300171DBC /* UCScroll.swift */,
+				A07FCD2A28D3A2C200817985 /* CSUScoll.swift */,
 			);
 			path = UniversityView;
 			sourceTree = "<group>";

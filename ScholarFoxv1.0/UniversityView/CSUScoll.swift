@@ -13,9 +13,8 @@ struct CSUScoll: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(csus) { csu in CSUCardView(csucard: csu)
-                       
                 }
-                .frame(maxWidth: 2000, maxHeight: 540)
+                .frame(maxWidth: 5000, maxHeight: 540)
                 .padding(.horizontal)
                 .shadow(radius: 5)
             }

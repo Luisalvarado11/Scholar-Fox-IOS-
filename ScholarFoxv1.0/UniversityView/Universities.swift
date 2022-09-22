@@ -15,28 +15,33 @@ struct Universities: View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding()
-                
+
                 Text("California State Universities")
                     .font(.title2)
-                    .fontWeight(.semibold)
+                    .fontWeight(.bold)
                     .multilineTextAlignment(.leading)
                     .padding()
-                
-                //Calls in CSUScroll UI viewpage
+
+                // Calls in CSUScroll UI viewpage
                 CSUScoll()
                 Spacer()
-                
+
                 Text("University of California")
                     .font(.title2)
-                    .fontWeight(.semibold)
+                    .fontWeight(.bold)
                     .multilineTextAlignment(.leading)
                     .padding()
-                
-                //Calls in UCScroll UI viewpage
+
+                // Calls in UCScroll UI viewpage
                 UCScroll()
                 Spacer()
             }
         }
+        .background(
+            Image("UIBackground")
+                .resizable()
+                .edgesIgnoringSafeArea(.all)
+                .frame(width: 450, height: 850))
     }
 }
 
