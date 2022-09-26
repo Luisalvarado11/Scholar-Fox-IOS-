@@ -15,102 +15,74 @@ struct schoolsInfo {
 }
 
 struct user_assumptions: View {
-    @State private var gpa: String = ""
+    @State private var gpa: Double = 0
     @State private var major: String = ""
-    
-    // schools created with the struct
-    let CSUF = schoolsInfo(name: "CSUF", GPA: 2.49, major: "Business")
-    let CALPOLY = schoolsInfo(name: "CALPOLY", GPA: 4.0, major: "Philosphy")
-    let CSULB = schoolsInfo(name: "CSULB", GPA: 3.3, major: "Business")
-    
-    private let school = ["CSUF", "CALPOLY", "CSULB"]
-    
-    // creating the code to print the string
-    func assumeForGpa(_ assume: String) -> String {
-        let user = Double(assume)
-        var something = ""
-        
-        if user == CSUF.GPA {
-            something = CSUF.name
-        } else if user == CALPOLY.GPA {
-            something = CALPOLY.name
-        } else if user == CSULB.GPA {
-            something = CSULB.name
-        } else {
-            something = "Empty"
-        }
-        return String(something)
-    }
-    
-    // creating the code to print the string
-    func assumeForMajor(_ assume: String) -> String {
-        let user = major
-        var something = ""
-        
-        if user == CSUF.major {
-            something = CSUF.name
-        } else if user == CALPOLY.major {
-            something = CALPOLY.name
-        } else if user == CSULB.major {
-            something = CSULB.name
-        } else {
-            something = "Empty"
-        }
-        return String(something)
-    }
-    
-//        .background(
-//        Image("school_image")
-//            .resizable()
-//            .edgesIgnoringSafeArea(.all)
-//            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-//        )
+    @State private var details = false
     
     // shows the phone
     var body: some View {
         // other code
-        VStack {
-            VStack(alignment: .trailing, spacing: 20) {
-                Text(" Assumptions Page")
+        // VStack {
+        ZStack(alignment: .bottomLeading) {
+            VStack {
+                Text("Assumptions Page")
                     .font(.title)
-                    .foregroundColor(.black)
                     .fontWeight(.black)
-            }
+                    .foregroundColor(.black)
+                    .border(Color.purple, width: 4)
+                    .padding()
                 
-            // background image
-            // work
-            Section(header: Text("GPA")) {
-                TextField("Enter Your GPA:", text: $gpa)
-                    .keyboardType(.decimalPad)
-            }
-            .padding()
-                    
-            Section(header: Text("Major")) {
-                TextField("Enter your a major ", text: $major)
-                    .keyboardType(.default)
-            }
-            .padding()
-    
-            // header for school
-            Section(header: Text("School")) {
-                // first: takes the converted amount
-                // second: displaying the information
+                //Section(header: Text("GPA")) {
+                Text("GPA")
+                    .font(.headline)
+                    .fontWeight(.black)
+                    .foregroundColor(.black)
+                    .padding()
+                
+                TextField("Enter Your GPA:", value: $gpa, format: .number)
+                    //.keyboardType(.decimalPad)
+                    .multilineTextAlignment(.center)
+                //}
+                .padding()
+
+
+                // Section(header: Text("Major")) {
+                    Text("Major")
+                    .font(.headline)
+                    .fontWeight(.black)
+                    .foregroundColor(.black)
+                    .padding()
+                
+                    TextField("Enter your a major ", text: $major)
+                        .keyboardType(.default)
+                        .multilineTextAlignment(.center)
+                        .padding()
+                //}
+
+                // header for school
+                //Section(header: Text("School")) {
+                    Text("School")
+                    .font(.headline)
+                    .fontWeight(.black)
+                    .foregroundColor(.black)
+                    .padding()
+                    // first: takes the converted amount
+                    // second: displaying the information
                 Text("\(assumeForGpa(gpa))")
-                Text("\(assumeForMajor(major))")
+//                    Text("\(assumeForMajor(major))")
+                //}
+                .padding()
             }
-            .padding()
+            .background(
+                Image("background_two")
+                    .resizable()
+                    .edgesIgnoringSafeArea(.all)
+                    .frame(width: 400, height: 850)
+            )
         }
-        .background(
-        Image("background")
-            .resizable()
-            .edgesIgnoringSafeArea(.all)
-            .scaledToFit()
-            .frame(width: 470, height: 800)
-        )
-        
     }
 }
-        
+
 struct user_assumptions_Previews: PreviewProvider {
     static var previews: some View {
         user_assumptions()
