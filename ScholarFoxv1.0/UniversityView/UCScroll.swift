@@ -14,7 +14,7 @@ struct UCScroll: View {
             HStack {
                 ForEach(ucs) { uc in UCCardview(uccard: uc)
                 }
-                .frame(maxWidth: 700, maxHeight: 540)
+                .frame(maxHeight: 400)
                 .scaledToFit()
                 .padding(.horizontal)
                 .shadow(radius: 5)

@@ -14,7 +14,7 @@ struct CSUScoll: View {
             HStack {
                 ForEach(csus) { csu in CSUCardView(csucard: csu)
                 }
-                .frame(maxWidth: 5000, maxHeight: 540)
+                .frame(maxHeight: 400)
                 .padding(.horizontal)
                 .shadow(radius: 5)
             }

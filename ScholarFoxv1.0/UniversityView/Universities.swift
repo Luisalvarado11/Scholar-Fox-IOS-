@@ -38,7 +38,7 @@ struct Universities: View {
             }
         }
         .background(
-            Image("UIBackground")
+            Image("Sand")
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
                 .frame(width: 450, height: 850))
