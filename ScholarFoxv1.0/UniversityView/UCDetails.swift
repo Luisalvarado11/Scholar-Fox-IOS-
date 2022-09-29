@@ -49,8 +49,14 @@ struct UCDetails: View {
                     
                     Image(systemName: "dollarsign.circle.fill")
                         .foregroundColor(Color.green)
-                    Text("Out of State Tuition: ")
+                    Text("Out of State Tuition: \(UCDetail.out_of_state)")
                 }
+                
+                HStack(alignment: .center, spacing: 0) {
+                    Image(systemName: "list.clipboard")
+                    Text("Minimum Required GPA: \(UCDetail.minimum_gpa)")
+                }
+                
                 Spacer(minLength: 25)
                 
                 Link(destination: URL(string: UCDetail.web)!, label: {

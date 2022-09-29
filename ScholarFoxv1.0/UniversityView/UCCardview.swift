@@ -35,7 +35,7 @@ struct UCCardview: View {
                 self.showModel = true
             }
             .sheet(isPresented: self.$showModel) {
-                UCDetails(UCDetail: uc[0])
+                UCDetails(UCDetail: self.uccard)
             }
         }
     }
@@ -43,7 +43,7 @@ struct UCCardview: View {
 
 struct UCCardview_Previews: PreviewProvider {
     static var previews: some View {
-        UCCardview(uccard: uc[0])
+        UCCardview(uccard: uc[1])
             .previewLayout(.sizeThatFits)
     }
 }

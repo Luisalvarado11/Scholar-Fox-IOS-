@@ -36,7 +36,7 @@ struct CSUCardView: View {
                 self.showModel = true
             }
             .sheet(isPresented: self.$showModel) {
-                CSUDetails(csuDetail: csu[0])
+                CSUDetails(csuDetail: self.csucard)
             }
         }
     }

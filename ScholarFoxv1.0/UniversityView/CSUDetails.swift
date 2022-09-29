@@ -49,8 +49,15 @@ struct CSUDetails: View {
                         
                     Image(systemName: "dollarsign.circle.fill")
                         .foregroundColor(Color.green)
-                    Text("Out of State Tuition: ")
+                    Text("Out of State Tuition: \(csuDetail.out_of_state)")
                 }
+                Spacer(minLength: 10)
+                
+                HStack(alignment: .center, spacing: 0) {
+                    Image(systemName: "list.clipboard")
+                    Text("Minimum Required GPA: \(csuDetail.minimum_gpa)")
+                }
+                
                 Spacer(minLength: 25)
                     
                 Link(destination: URL(string: csuDetail.web)!, label: {
