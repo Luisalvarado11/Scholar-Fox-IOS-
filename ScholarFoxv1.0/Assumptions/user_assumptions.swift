@@ -23,62 +23,68 @@ struct user_assumptions: View {
     var body: some View {
         // other code
         // VStack {
-        ZStack(alignment: .bottomLeading) {
-            VStack {
-                Text("Assumptions Page")
-                    .font(.title)
-                    .fontWeight(.black)
-                    .foregroundColor(.black)
-                    .border(Color.purple, width: 4)
-                    .padding()
-                
-                //Section(header: Text("GPA")) {
-                Text("GPA")
-                    .font(.headline)
-                    .fontWeight(.black)
-                    .foregroundColor(.black)
-                    .padding()
-                
-                TextField("Enter Your GPA:", value: $gpa, format: .number)
-                    //.keyboardType(.decimalPad)
-                    .multilineTextAlignment(.center)
-                //}
-                .padding()
-
-
-                // Section(header: Text("Major")) {
+        NavigationView {
+            ZStack(alignment: .bottomLeading) {
+                VStack {
+                    Text("Assumptions Page")
+                        .font(.title)
+                        .fontWeight(.black)
+                        .foregroundColor(.black)
+                        .border(Color.purple, width: 4)
+                        .padding()
+                    
+                    // Section(header: Text("GPA")) {
+                    Text("GPA")
+                        .font(.headline)
+                        .fontWeight(.black)
+                        .foregroundColor(.black)
+                        .padding()
+                    
+                    TextField("Enter Your GPA:", value: $gpa, format: .number)
+                        .keyboardType(.decimalPad)
+                        .multilineTextAlignment(.center)
+                        // }
+                        .padding()
+                    
+                    // change screen
+                    NavigationLink(destination: Second()) {
+                        Image(systemName: "leaf.fill")
+                            .foregroundStyle(Color.green)
+                    }
+                    // change screen
+                    
+                    // Section(header: Text("Major")) {
                     Text("Major")
-                    .font(.headline)
-                    .fontWeight(.black)
-                    .foregroundColor(.black)
-                    .padding()
-                
+                        .font(.headline)
+                        .fontWeight(.black)
+                        .foregroundColor(.black)
+                        .padding()
+                    
                     TextField("Enter your a major ", text: $major)
-                        .keyboardType(.default)
+                        //.keyboardType(.default)
                         .multilineTextAlignment(.center)
                         .padding()
-                //}
 
-                // header for school
-                //Section(header: Text("School")) {
+                    // header for school
+                    // Section(header: Text("School")) {
                     Text("School")
-                    .font(.headline)
-                    .fontWeight(.black)
-                    .foregroundColor(.black)
-                    .padding()
+                        .font(.headline)
+                        .fontWeight(.black)
+                        .foregroundColor(.black)
+                        .padding()
                     // first: takes the converted amount
                     // second: displaying the information
-                Text("\(assumeForGpa(gpa))")
-//                    Text("\(assumeForMajor(major))")
-                //}
-                .padding()
+                    Text("\(assumeForGpa(gpa))")
+                    Text("\(assumeForMajor(major))")
+                        .padding()
+                }
+                .background(
+                    Image("background_two")
+                        .resizable()
+                        .edgesIgnoringSafeArea(.all)
+                        .frame(width: 400, height: 850)
+                )
             }
-            .background(
-                Image("background_two")
-                    .resizable()
-                    .edgesIgnoringSafeArea(.all)
-                    .frame(width: 400, height: 850)
-            )
         }
     }
 }
