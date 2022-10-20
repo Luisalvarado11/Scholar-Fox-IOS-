@@ -16,12 +16,16 @@ private var show: Bool = false
 let CSUF = schoolsInfo(name: "CSUF", GPA: 2.49, major: "Business")
 let CALPOLY = schoolsInfo(name: "CALPOLY", GPA: 4.0, major: "Engineering")
 let CSULB = schoolsInfo(name: "CSULB", GPA: 3.56, major: "Social Sciences")
+let CSUBERN = schoolsInfo(name: "CSUBERN", GPA: 3.2, major: "Homeland Security")
+let CSUFRESNO = schoolsInfo(name: "CSUFRESNO", GPA: 2, major: "Law Enforcement")
+let CSULA = schoolsInfo(name: "CSULA", GPA: 2.5, major: "Nursing")
+let CSUHUM = schoolsInfo(name: "CSUHUM", GPA: 2.49, major: "Psychology")
 
-private let school = ["CSUF", "CALPOLY", "CSULB"]
+// private let school = ["CSUF", "CALPOLY", "CSULB"]
 
 // creating the code to print the string
 func assumeForGpa(_ assume: Double) -> String{
-    var something = ""
+    var something = " "
     
     if assume < 0 && assume > 4.0{
         something = "Try again"
@@ -36,7 +40,7 @@ func assumeForGpa(_ assume: Double) -> String{
         something = CALPOLY.name
         
     } else {
-        something = "Keep Working Hard"
+        something = " "
         
     }
     return String(something)
@@ -45,7 +49,7 @@ func assumeForGpa(_ assume: Double) -> String{
 // creating the code to print the string
 func assumeForMajor(_ assume: String) -> String {
     //let assume = major
-    var something = ""
+    var something = " "
     
     if assume == CSUF.major {
         something = CSUF.name
@@ -54,7 +58,7 @@ func assumeForMajor(_ assume: String) -> String {
     } else if assume == CSULB.major {
         something = CSULB.name
     } else {
-        something = "Empty"
+        something = " "
     }
     return String(something)
 }

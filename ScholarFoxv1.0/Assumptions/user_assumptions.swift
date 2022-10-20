@@ -79,7 +79,7 @@ struct user_assumptions: View {
                         .padding()
                 }
                 .background(
-                    Image("background_two")
+                    Image("sand_two")
                         .resizable()
                         .edgesIgnoringSafeArea(.all)
                         .frame(width: 400, height: 850)

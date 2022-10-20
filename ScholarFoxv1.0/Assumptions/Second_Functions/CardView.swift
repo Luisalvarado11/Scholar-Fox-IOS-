@@ -44,7 +44,6 @@ struct CardView: View {
             .padding(.leading, 10)
             
         }
-        
         .cornerRadius(8)
         .offset(x: card.x, y: card.y)
         .rotationEffect(.init(degrees: card.degree))
