@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Universities: View {
+    var hapticTouch = UIImpactFeedbackGenerator(style: .heavy)
+    @State private var showModel: Bool = false
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(alignment: .leading, spacing: 14) {
@@ -15,14 +17,22 @@ struct Universities: View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding()
-
-                Text("California State Universities")
-                    .font(.title2)
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.leading)
+                HStack {
+                    Text("California State Universities")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(.leading)
+                        .padding()
+                    Spacer()
+                    //added
+                    Button(action: {self.showModel.toggle()}, label: {
+                        Image(systemName: "info.circle")
+                    })
                     .padding()
-
-                // Calls in CSUScroll UI viewpage
+                }
+                .sheet(isPresented: self.$showModel) {
+                    sample()
+                }
                 CSUScoll()
                 Spacer()
 

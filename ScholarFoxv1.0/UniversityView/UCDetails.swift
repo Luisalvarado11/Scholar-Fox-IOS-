@@ -74,9 +74,9 @@ struct UCDetails: View {
             
             Spacer(minLength: 15)
             
-            Text("Recommendations")
-                .font(.title3)
-                .fontWeight(.semibold)
+//            Text("Recommendations")
+//                .font(.title3)
+//                .fontWeight(.semibold)
         }
         .background(
             Image("Sand")

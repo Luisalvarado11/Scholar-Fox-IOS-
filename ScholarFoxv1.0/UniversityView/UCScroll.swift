@@ -12,7 +12,7 @@ struct UCScroll: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
-                ForEach(ucs) { uc in UCCardview(uccard: uc)
+                ForEach(ucs.shuffled()) { uc in UCCardview(uccard: uc)
                 }
                 .frame(maxHeight: 400)
                 .scaledToFit()

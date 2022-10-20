@@ -12,7 +12,7 @@ struct CSUScoll: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
-                ForEach(csus) { csu in CSUCardView(csucard: csu)
+                ForEach(csus.shuffled()) { csu in CSUCardView(csucard: csu)
                 }
                 .frame(maxHeight: 400)
                 .padding(.horizontal)
