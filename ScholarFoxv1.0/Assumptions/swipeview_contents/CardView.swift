@@ -32,6 +32,7 @@ struct CardView: View {
                 // csuf text
                 Text(card.name)
                     .font(.title)
+                    .fontWeight(.black)
                     .foregroundColor(.white)
                     .fontWeight(.bold)
                 

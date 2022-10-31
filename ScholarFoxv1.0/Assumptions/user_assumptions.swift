@@ -8,16 +8,14 @@
 import SwiftUI
 
 // a struct for schools
-struct schoolsInfo {
-    var name: String
-    var GPA: Double
-    var major: String
-}
+
 
 struct user_assumptions: View {
-    @State private var gpa: Double = 0
-    @State private var major: String = ""
-    @State private var details = false
+    // @State private var gpa: Double = 0
+    @AppStorage("gpa") var gpa: Double = 0
+    // @State private var major: String = ""
+    @AppStorage("major") var major: String = ""
+    @State private var showing = false
     
     // shows the phone
     var body: some View {
@@ -40,6 +38,7 @@ struct user_assumptions: View {
                         .foregroundColor(.black)
                         .padding()
                     
+                    // GPA text field
                     TextField("Enter Your GPA:", value: $gpa, format: .number)
                         .keyboardType(.decimalPad)
                         .multilineTextAlignment(.center)
@@ -47,11 +46,18 @@ struct user_assumptions: View {
                         .padding()
                     
                     // change screen
-                    NavigationLink(destination: Second()) {
-                        Image(systemName: "leaf.fill")
-                            .foregroundStyle(Color.green)
+                    NavigationLink(destination: SwipeViewGPA()) {
+                        Image(systemName: "number.square.fill")
+                            .foregroundStyle(Color.blue)
                     }
-                    // change screen
+//                    // using a different option to change screen
+//                    Button(action: {
+//                        self.showing.toggle()
+//                    }) {
+//                        Text("show detail")
+//                    }.sheet(isPresented: $showing) {
+//                        SwipeView()
+//                    }
                     
                     // Section(header: Text("Major")) {
                     Text("Major")
@@ -64,19 +70,25 @@ struct user_assumptions: View {
                         //.keyboardType(.default)
                         .multilineTextAlignment(.center)
                         .padding()
+                    
+                    // change screen
+                    NavigationLink(destination: SwipeViewMajors()) {
+                        Image(systemName: "house.fill")
+                            .foregroundStyle(Color.red)
+                    }
 
                     // header for school
                     // Section(header: Text("School")) {
-                    Text("School")
-                        .font(.headline)
-                        .fontWeight(.black)
-                        .foregroundColor(.black)
-                        .padding()
+//                    Text("School")
+//                        .font(.headline)
+//                        .fontWeight(.black)
+//                        .foregroundColor(.black)
+//                        .padding()
                     // first: takes the converted amount
                     // second: displaying the information
-                    Text("\(assumeForGpa(gpa))")
-                    Text("\(assumeForMajor(major))")
-                        .padding()
+//                    Text("\(assumeForGpa(gpa))")
+                    // Text("\(assumeForMajor(major))")
+                       // .padding()
                 }
                 .background(
                     Image("sand_two")
