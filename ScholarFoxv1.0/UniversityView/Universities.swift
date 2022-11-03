@@ -8,43 +8,48 @@
 import SwiftUI
 
 struct Universities: View {
+    //Detects finger touch on screen
     var hapticTouch = UIImpactFeedbackGenerator(style: .heavy)
     @State private var showModel: Bool = false
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(alignment: .leading, spacing: 14) {
-                Text("University View")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .padding()
                 HStack {
+                    Text("University View")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .padding()
+                    
+                    Button(action: { self.showModel.toggle() }, label: {
+                        Image(systemName: "info.circle")
+                    })
+                
+                }
                     Text("California State Universities")
                         .font(.title2)
                         .fontWeight(.bold)
                         .multilineTextAlignment(.leading)
                         .padding()
                     Spacer()
-                    //added
-                    Button(action: {self.showModel.toggle()}, label: {
-                        Image(systemName: "info.circle")
-                    })
-                    .padding()
-                }
+
                 .sheet(isPresented: self.$showModel) {
                     sample()
                 }
+              
+                // Calls in CSUScroll UI viewpage
                 CSUScoll()
                 Spacer()
 
-                Text("University of California")
-                    .font(.title2)
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.leading)
-                    .padding()
+                    Text("University of California")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(.leading)
+                        .padding()
+            
+                    // Calls in UCScroll UI viewpage
+                    UCScroll()
+                    Spacer()
 
-                // Calls in UCScroll UI viewpage
-                UCScroll()
-                Spacer()
             }
         }
         .background(

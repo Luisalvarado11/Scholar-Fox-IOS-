@@ -54,7 +54,7 @@ struct UCDetails: View {
                 
                 HStack(alignment: .center, spacing: 0) {
                     Image(systemName: "list.clipboard")
-                    Text("Minimum Required GPA: \(UCDetail.minimum_gpa)")
+                    Text("Minimum Required GPA: \(UCDetail.gpa)")
                 }
                 
                 Spacer(minLength: 25)
@@ -88,6 +88,6 @@ struct UCDetails: View {
 
 struct UCDetails_Previews: PreviewProvider {
     static var previews: some View {
-        UCDetails(UCDetail: uc[0])
+        UCDetails(UCDetail: uc[1])
     }
 }

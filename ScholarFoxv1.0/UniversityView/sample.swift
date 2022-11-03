@@ -27,7 +27,7 @@ struct sample: View {
             Text("2) Grades")
                 .font(.title3)
                 .fontWeight(.bold)
-            
+
             Text("The grades you earn in high school are the most important factor in CSU admission decisions. Your high school grade point average is calculated using your grades in all your college prep a-g classes completed after the 9th grade.")
                 .font(.headline)
             Text("The minimum requirement for acceptance for california residents is 2.5 or higher.")
@@ -36,7 +36,7 @@ struct sample: View {
             Text("3) Graduation from High School")
                 .font(.title3)
                 .fontWeight(.bold)
-            
+
                 .font(.headline)
         }
         .background(
@@ -45,7 +45,6 @@ struct sample: View {
                 .edgesIgnoringSafeArea(.all)
                 .frame(width: 450, height: 850))
     }
-    
 }
 
 struct sample_Previews: PreviewProvider {

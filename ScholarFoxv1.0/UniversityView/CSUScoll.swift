@@ -12,11 +12,14 @@ struct CSUScoll: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
-                ForEach(csus.shuffled()) { csu in CSUCardView(csucard: csu)
+                ForEach(csus) { csu in  CSUCardView(csucard: csu)
+//                    GeometryReader { geometry in CSUCardView(csucard: csu)
+//                            .rotation3DEffect(Angle(degrees: Double(geometry.frame(in: .global).minX) / -20), axis: (x: 0, y: 10.0, z: 0))
+//                    }
+                    .frame(maxHeight: 400)
+                    .padding(.horizontal)
+                    .shadow(radius: 5)
                 }
-                .frame(maxHeight: 400)
-                .padding(.horizontal)
-                .shadow(radius: 5)
             }
         }
     }

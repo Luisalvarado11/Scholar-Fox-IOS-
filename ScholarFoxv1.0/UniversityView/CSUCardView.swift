@@ -22,11 +22,16 @@ struct CSUCardView: View {
                     .scaledToFit()
                     .cornerRadius(25)
                 
-            VStack(alignment: .leading, spacing: 12) {
-                Text(csucard.name)
-                    .font(.system(.title, design: .serif))
-                    .fontWeight(.bold)
-                    .lineLimit(2)
+                VStack(alignment: .leading, spacing: 12) {
+                    Text(csucard.name)
+                        .font(.system(.title, design: .serif))
+                        .fontWeight(.bold)
+                        .lineLimit(2)
+                
+//                Text(csucard.)
+//                    .foregroundColor(Color.black)
+//                    .italic()
+//                    .lineLimit(2)
                 }
             }
             .padding()
@@ -44,7 +49,7 @@ struct CSUCardView: View {
 
 struct CSUCardView_Previews: PreviewProvider {
     static var previews: some View {
-        CSUCardView(csucard: csu[0])
+        CSUCardView(csucard: csu[1])
             .previewLayout(.sizeThatFits)
     }
 }

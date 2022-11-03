@@ -13,6 +13,7 @@ struct UCScroll: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(ucs.shuffled()) { uc in UCCardview(uccard: uc)
+
                 }
                 .frame(maxHeight: 400)
                 .scaledToFit()

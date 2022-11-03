@@ -19,8 +19,12 @@ struct UCCardview: View {
             VStack(alignment: .leading, spacing: 0) {
                 Image(uccard.image)
                     .resizable()
-                    .scaledToFit()
-                    .cornerRadius(25)
+                     .scaledToFit()
+                     .cornerRadius(25)
+//                    .overlay {
+//                        Text(uccard.name)
+//                            .padding()
+//                    }
 
                 VStack(alignment: .leading, spacing: 12) {
                     Text(uccard.name)

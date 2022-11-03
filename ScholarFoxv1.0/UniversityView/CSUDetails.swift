@@ -22,28 +22,27 @@ struct CSUDetails: View {
                     .font(.system(.largeTitle, design: .serif))
                     .bold()
                     .multilineTextAlignment(.center)
-                    .padding(.top, 10)
+                    .padding(.top, 5)
+                    .padding(.bottom, 5)
                     
                 HStack(alignment: .center, spacing: 0) {
                     Image(systemName: "mappin.circle.fill")
                         .foregroundColor(Color.red)
                     Text("Location: \(csuDetail.city)")
-                        .fontWeight(.medium)
-                        
+                    
                     Spacer()
-                        
-                    Image(systemName: "dollarsign.circle.fill")
-                        .foregroundColor(Color.green)
-                    Text("Tuition Cost \(csuDetail.average_cost)")
-                        .fontWeight(.medium)
+                    
+                    Image(systemName: "person.crop.circle.fill.badge.checkmark")
+                        .foregroundColor(Color.blue)
+                    Text("Acceptance: \(csuDetail.acceptanceRating)")
                 }
                     
                 Spacer(minLength: 10)
                     
                 HStack(alignment: .center, spacing: 0) {
-                    Image(systemName: "person.crop.circle.fill.badge.checkmark")
-                        .foregroundColor(Color.blue)
-                    Text("Acceptance Rate: \(csuDetail.acceptanceRating)")
+                    Image(systemName: "dollarsign.circle.fill")
+                        .foregroundColor(Color.green)
+                    Text("Tuition Cost \(csuDetail.average_cost)")
                         
                     Spacer()
                         
@@ -55,7 +54,7 @@ struct CSUDetails: View {
                 
                 HStack(alignment: .center, spacing: 0) {
                     Image(systemName: "list.clipboard")
-                    Text("Minimum Required GPA: \(csuDetail.minimum_gpa)")
+                    Text("Required GPA: \(csuDetail.gpa)")
                 }
                 
                 Spacer(minLength: 25)
@@ -67,17 +66,14 @@ struct CSUDetails: View {
                         },
                         icon: { Image(systemName: "paperplane.fill") })
                 })
+                
                 Spacer(minLength: 25)
                     
                 Text(csuDetail.description)
                     .font(.system(.body, design: .serif))
             }
-                
+
             Spacer(minLength: 15)
-                
-//            Text("Recommendations")
-//                .font(.title3)
-//                .fontWeight(.semibold)
         }
         .background(
             Image("Sand")
