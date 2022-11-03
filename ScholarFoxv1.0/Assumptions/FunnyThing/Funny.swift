@@ -14,7 +14,7 @@ var audioplayer: AVAudioPlayer?
 
 // sound: String, type: String
 func playSound() {
-    let sounds = ["perfect-fart", "bruh-sound-2", "sipping-coffee", "bruh-sound-1", "bonk"]
+    let sounds = ["perfect-fart", "bruh-sound-2", "bruh-sound-1", "bonk"]
     let sound = sounds.randomElement()
     
     if let path = Bundle.main.path(forResource: sound, ofType: "mp3") {

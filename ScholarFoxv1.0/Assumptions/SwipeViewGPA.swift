@@ -17,7 +17,7 @@ struct SwipeViewGPA: View {
         
         ZStack {
             ZStack {
-                ForEach(card_info.data.filter { $0.GPA <= gpa && $0.GPA > 0 && $0.GPA < 5}) { card in
+                ForEach(card_info.data.filter { $0.GPA <= gpa && gpa > 0 && gpa < 5}) { card in
                     CardView(card: card)
                 }
             }

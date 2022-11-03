@@ -127,8 +127,6 @@
 				A9BF8AC629145AC200B51072 /* old_code.swift */,
 				A976D37D28D1182D00E04388 /* Assumptions */,
 				A07CC49528D1099400F641C8 /* ScholarFoxv1_0App.swift */,
-				A07CC4C428D10A1500F641C8 /* UniversityView */,
-				A07CC4C328D10A0B00F641C8 /* Approximator */,
 				A07CC49728D1099400F641C8 /* ContentView.swift */,
 				A07CC49928D1099500F641C8 /* Assets.xcassets */,
 				A07CC49B28D1099500F641C8 /* Preview Content */,
@@ -159,20 +157,6 @@
 				A07CC4B228D1099500F641C8 /* ScholarFoxv1_0UITestsLaunchTests.swift */,
 			);
 			path = ScholarFoxv1.0UITests;
-			sourceTree = "<group>";
-		};
-		A07CC4C328D10A0B00F641C8 /* Approximator */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Approximator;
-			sourceTree = "<group>";
-		};
-		A07CC4C428D10A1500F641C8 /* UniversityView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UniversityView;
 			sourceTree = "<group>";
 		};
 		A92CAAF728EFA30400D8D806 /* swipeview_contents */ = {

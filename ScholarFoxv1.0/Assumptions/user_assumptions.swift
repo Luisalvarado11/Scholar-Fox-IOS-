@@ -16,16 +16,8 @@ struct user_assumptions: View {
     var body: some View {
         NavigationView {
             VStack(spacing: .zero) {
-                // Fun - trial code
-                Button(action: {
-                    playSound()
-                }) {
-                    Image(systemName: "house.fill")
-                    Text("MAGIC")
-                        .font(.headline)
-                        .fontWeight(.black)
-                        .foregroundStyle(Color.black)
-                }
+                // meant for the background
+                Text("")
                 
                 // main code
                 Form {
@@ -56,9 +48,35 @@ struct user_assumptions: View {
                     }
                 }
             }
-            // The title of the top of the page
-            .navigationTitle("Assumptions")
-            .background(Image("sand_two"))
+            .background(
+                Image("sand_two")
+                    .resizable()
+                    .edgesIgnoringSafeArea(.all)
+            )
+            
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    HStack {
+                        // funny sound on the fox logo
+                        Button(action: {
+                            playSound()
+                        }) {
+                            Image("fox_logo_v2")
+                                .resizable()
+                                .frame(width: 45, height: 45)
+                                .shadow(radius: 10)
+                                .clipShape(Circle())
+                                .overlay(Circle().stroke(Color.orange, lineWidth: 2))
+                        }
+                        
+                        // the title
+                        Text("Assumptions")
+                            .font(.title)
+                            .bold()
+                    }
+                }
+            }
         }
     }
 }
