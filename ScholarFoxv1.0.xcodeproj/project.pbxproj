@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A004D17828E4232C00C5A5E1 /* CSUDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004D17728E4232C00C5A5E1 /* CSUDetails.swift */; };
-		A004D17C28E4CE8E00C5A5E1 /* UCDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004D17B28E4CE8E00C5A5E1 /* UCDetails.swift */; };
-		A063B43928F8B48A00ADAAAE /* sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A063B43828F8B48A00ADAAAE /* sample.swift */; };
 		A07CC49628D1099400F641C8 /* ScholarFoxv1_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CC49528D1099400F641C8 /* ScholarFoxv1_0App.swift */; };
 		A07CC49828D1099400F641C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CC49728D1099400F641C8 /* ContentView.swift */; };
 		A07CC49A28D1099500F641C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07CC49928D1099500F641C8 /* Assets.xcassets */; };
@@ -19,12 +16,6 @@
 		A07CC4B328D1099500F641C8 /* ScholarFoxv1_0UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CC4B228D1099500F641C8 /* ScholarFoxv1_0UITestsLaunchTests.swift */; };
 		A07CC4C028D109A700F641C8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A07CC4BF28D109A700F641C8 /* .gitignore */; };
 		A07CC4C228D109BC00F641C8 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = A07CC4C128D109BC00F641C8 /* .gitattributes */; };
-		A07CC4C628D10C7C00F641C8 /* Universities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CC4C528D10C7C00F641C8 /* Universities.swift */; };
-		A07CC4C828D10CBE00F641C8 /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CC4C728D10CBE00F641C8 /* University.swift */; };
-		A07FCD2928D2E80C00817985 /* CSUCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07FCD2828D2E80C00817985 /* CSUCardView.swift */; };
-		A07FCD2B28D3A2C200817985 /* CSUScoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07FCD2A28D3A2C200817985 /* CSUScoll.swift */; };
-		A07FCD2D28D3C51D00817985 /* UCCardview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07FCD2C28D3C51D00817985 /* UCCardview.swift */; };
-		A0C3B53928D9710300171DBC /* UCScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3B53828D9710300171DBC /* UCScroll.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A004D17728E4232C00C5A5E1 /* CSUDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSUDetails.swift; sourceTree = "<group>"; };
-		A004D17B28E4CE8E00C5A5E1 /* UCDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCDetails.swift; sourceTree = "<group>"; };
-		A063B43828F8B48A00ADAAAE /* sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sample.swift; sourceTree = "<group>"; };
 		A07CC49228D1099400F641C8 /* ScholarFoxv1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScholarFoxv1.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07CC49528D1099400F641C8 /* ScholarFoxv1_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScholarFoxv1_0App.swift; sourceTree = "<group>"; };
 		A07CC49728D1099400F641C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,12 +48,6 @@
 		A07CC4B228D1099500F641C8 /* ScholarFoxv1_0UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScholarFoxv1_0UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A07CC4BF28D109A700F641C8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A07CC4C128D109BC00F641C8 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
-		A07CC4C528D10C7C00F641C8 /* Universities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Universities.swift; sourceTree = "<group>"; };
-		A07CC4C728D10CBE00F641C8 /* University.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
-		A07FCD2828D2E80C00817985 /* CSUCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSUCardView.swift; sourceTree = "<group>"; };
-		A07FCD2A28D3A2C200817985 /* CSUScoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSUScoll.swift; sourceTree = "<group>"; };
-		A07FCD2C28D3C51D00817985 /* UCCardview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCCardview.swift; sourceTree = "<group>"; };
-		A0C3B53828D9710300171DBC /* UCScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCScroll.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,10 +100,10 @@
 		A07CC49428D1099400F641C8 /* ScholarFoxv1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				A07CC49528D1099400F641C8 /* ScholarFoxv1_0App.swift */,
 				A07CC4C428D10A1500F641C8 /* UniversityView */,
 				A07CC4C328D10A0B00F641C8 /* Approximator */,
 				A07CC49728D1099400F641C8 /* ContentView.swift */,
-				A07CC49528D1099400F641C8 /* ScholarFoxv1_0App.swift */,
 				A07CC49928D1099500F641C8 /* Assets.xcassets */,
 				A07CC49B28D1099500F641C8 /* Preview Content */,
 			);
@@ -163,15 +145,6 @@
 		A07CC4C428D10A1500F641C8 /* UniversityView */ = {
 			isa = PBXGroup;
 			children = (
-				A07CC4C728D10CBE00F641C8 /* University.swift */,
-				A07CC4C528D10C7C00F641C8 /* Universities.swift */,
-				A063B43828F8B48A00ADAAAE /* sample.swift */,
-				A07FCD2828D2E80C00817985 /* CSUCardView.swift */,
-				A004D17728E4232C00C5A5E1 /* CSUDetails.swift */,
-				A07FCD2A28D3A2C200817985 /* CSUScoll.swift */,
-				A07FCD2C28D3C51D00817985 /* UCCardview.swift */,
-				A004D17B28E4CE8E00C5A5E1 /* UCDetails.swift */,
-				A0C3B53828D9710300171DBC /* UCScroll.swift */,
 			);
 			path = UniversityView;
 			sourceTree = "<group>";
@@ -308,16 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0C3B53928D9710300171DBC /* UCScroll.swift in Sources */,
-				A004D17828E4232C00C5A5E1 /* CSUDetails.swift in Sources */,
-				A004D17C28E4CE8E00C5A5E1 /* UCDetails.swift in Sources */,
-				A063B43928F8B48A00ADAAAE /* sample.swift in Sources */,
-				A07CC4C628D10C7C00F641C8 /* Universities.swift in Sources */,
-				A07FCD2B28D3A2C200817985 /* CSUScoll.swift in Sources */,
-				A07FCD2D28D3C51D00817985 /* UCCardview.swift in Sources */,
-				A07CC4C828D10CBE00F641C8 /* University.swift in Sources */,
 				A07CC49828D1099400F641C8 /* ContentView.swift in Sources */,
-				A07FCD2928D2E80C00817985 /* CSUCardView.swift in Sources */,
 				A07CC49628D1099400F641C8 /* ScholarFoxv1_0App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
