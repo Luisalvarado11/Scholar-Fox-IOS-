@@ -11,7 +11,12 @@ import SwiftUI
 struct ScholarFoxv1_0App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                Universities()
+                    .tabItem {
+                        Label("University View",systemImage: "books.vertical.fill" )
+                    }
+            }
         }
     }
 }
