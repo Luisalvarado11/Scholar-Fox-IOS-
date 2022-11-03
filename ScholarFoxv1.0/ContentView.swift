@@ -9,14 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
-            VStack {
-                NavigationLink(destination: user_assumptions()) {
-                    Image(systemName: "leaf.fill")
-                        .foregroundStyle(Color.green)
-                }
-            }
-        }
+        Text("Hello World")
+            .padding()
     }
 
     struct ContentView_Previews: PreviewProvider {

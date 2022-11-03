@@ -58,7 +58,7 @@ struct user_assumptions: View {
             }
             // The title of the top of the page
             .navigationTitle("Assumptions")
-            Image("school_image")
+            .background(Image("sand_two"))
         }
     }
 }
