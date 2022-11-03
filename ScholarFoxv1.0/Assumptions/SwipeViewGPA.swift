@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SwipeViewGPA: View {
-    @AppStorage("gpa") var gpa: Double = 0
+    @AppStorage("gpa") var gpa: Double = 0.0
     
     var body: some View {
         // overviews that aligns together
@@ -17,7 +17,7 @@ struct SwipeViewGPA: View {
         
         ZStack {
             ZStack {
-                ForEach(card_info.data.filter {( $0.GPA >= gpa || $0.GPA > 5)}) { card in
+                ForEach(card_info.data.filter { $0.GPA <= gpa && $0.GPA > 0 && $0.GPA < 5}) { card in
                     CardView(card: card)
                 }
             }

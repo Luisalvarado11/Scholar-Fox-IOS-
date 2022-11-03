@@ -28,7 +28,7 @@ struct card_info: Identifiable {
     // images and detail are being stored
     static var data: [card_info] {
         [
-            card_info(image: "csuf", name: "CSUF", descrption: "Best School", GPA: 2.49, MAJOR: "Business"),
+            card_info(image: "csuf", name: "CSUF", descrption: "Home of the Titans", GPA: 2.49, MAJOR: "Business"),
             card_info(image: "cal_poly", name: "CALPOLY", descrption: "Crazy School", GPA: 4.0, MAJOR: "Business"),
             card_info(image: "csulb", name: "CSULB", descrption: "School near the ocean", GPA: 3.56, MAJOR: "Business"),
             card_info(image: "san_bern", name: "CSUBERNARDINO", descrption: "School near the mountains", GPA: 3.2, MAJOR: "Psychology"),

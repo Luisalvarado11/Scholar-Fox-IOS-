@@ -17,10 +17,17 @@
 		A07CC4C028D109A700F641C8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A07CC4BF28D109A700F641C8 /* .gitignore */; };
 		A07CC4C228D109BC00F641C8 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = A07CC4C128D109BC00F641C8 /* .gitattributes */; };
 		A91080C1290F59E900A76E86 /* SwipeViewMajors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91080C0290F59E900A76E86 /* SwipeViewMajors.swift */; };
+		A91080C329102F4000A76E86 /* Funny.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91080C229102F4000A76E86 /* Funny.swift */; };
 		A92CAAB628EF70B400D8D806 /* CardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92CAAB528EF70B400D8D806 /* CardInfo.swift */; };
 		A92CAABA28EF7A1800D8D806 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92CAAB928EF7A1800D8D806 /* CardView.swift */; };
 		A9744D0628D3C4F300210D21 /* SwipeViewGPA.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9744D0528D3C4F300210D21 /* SwipeViewGPA.swift */; };
 		A976D37F28D1186800E04388 /* user_assumptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976D37E28D1186800E04388 /* user_assumptions.swift */; };
+		A97D71E1291057FA00034031 /* bonk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A97D71E0291057FA00034031 /* bonk.mp3 */; };
+		A97D71E42911807300034031 /* perfect-fart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A97D71E32911807300034031 /* perfect-fart.mp3 */; };
+		A97D71E8291180A100034031 /* bruh-sound-2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A97D71E7291180A000034031 /* bruh-sound-2.mp3 */; };
+		A97D71EA291180B400034031 /* bruh-sound-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A97D71E9291180B400034031 /* bruh-sound-1.mp3 */; };
+		A97D71EC291180C600034031 /* sipping-coffee.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A97D71EB291180C600034031 /* sipping-coffee.mp3 */; };
+		A9BF8AC729145AC200B51072 /* old_code.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BF8AC629145AC200B51072 /* old_code.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,10 +61,17 @@
 		A07CC4BF28D109A700F641C8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A07CC4C128D109BC00F641C8 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		A91080C0290F59E900A76E86 /* SwipeViewMajors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewMajors.swift; sourceTree = "<group>"; };
+		A91080C229102F4000A76E86 /* Funny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funny.swift; sourceTree = "<group>"; };
 		A92CAAB528EF70B400D8D806 /* CardInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfo.swift; sourceTree = "<group>"; };
 		A92CAAB928EF7A1800D8D806 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		A9744D0528D3C4F300210D21 /* SwipeViewGPA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewGPA.swift; sourceTree = "<group>"; };
 		A976D37E28D1186800E04388 /* user_assumptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user_assumptions.swift; sourceTree = "<group>"; };
+		A97D71E0291057FA00034031 /* bonk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bonk.mp3; sourceTree = "<group>"; };
+		A97D71E32911807300034031 /* perfect-fart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "perfect-fart.mp3"; path = "../../../../../Downloads/perfect-fart.mp3"; sourceTree = "<group>"; };
+		A97D71E7291180A000034031 /* bruh-sound-2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bruh-sound-2.mp3"; path = "../../../../../Downloads/bruh-sound-2.mp3"; sourceTree = "<group>"; };
+		A97D71E9291180B400034031 /* bruh-sound-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "bruh-sound-1.mp3"; path = "../../../../../Downloads/bruh-sound-1.mp3"; sourceTree = "<group>"; };
+		A97D71EB291180C600034031 /* sipping-coffee.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "sipping-coffee.mp3"; path = "../../../../../Downloads/sipping-coffee.mp3"; sourceTree = "<group>"; };
+		A9BF8AC629145AC200B51072 /* old_code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = old_code.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +124,7 @@
 		A07CC49428D1099400F641C8 /* ScholarFoxv1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				A9BF8AC629145AC200B51072 /* old_code.swift */,
 				A976D37D28D1182D00E04388 /* Assumptions */,
 				A07CC49528D1099400F641C8 /* ScholarFoxv1_0App.swift */,
 				A07CC4C428D10A1500F641C8 /* UniversityView */,
@@ -175,9 +190,23 @@
 				A976D37E28D1186800E04388 /* user_assumptions.swift */,
 				A9744D0528D3C4F300210D21 /* SwipeViewGPA.swift */,
 				A91080C0290F59E900A76E86 /* SwipeViewMajors.swift */,
+				A97D71E22910594900034031 /* FunnyThing */,
 				A92CAAF728EFA30400D8D806 /* swipeview_contents */,
 			);
 			path = Assumptions;
+			sourceTree = "<group>";
+		};
+		A97D71E22910594900034031 /* FunnyThing */ = {
+			isa = PBXGroup;
+			children = (
+				A91080C229102F4000A76E86 /* Funny.swift */,
+				A97D71E32911807300034031 /* perfect-fart.mp3 */,
+				A97D71E7291180A000034031 /* bruh-sound-2.mp3 */,
+				A97D71EB291180C600034031 /* sipping-coffee.mp3 */,
+				A97D71E9291180B400034031 /* bruh-sound-1.mp3 */,
+				A97D71E0291057FA00034031 /* bonk.mp3 */,
+			);
+			path = FunnyThing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,7 +314,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A07CC49D28D1099500F641C8 /* Preview Assets.xcassets in Resources */,
+				A97D71E1291057FA00034031 /* bonk.mp3 in Resources */,
+				A97D71EA291180B400034031 /* bruh-sound-1.mp3 in Resources */,
 				A07CC4C028D109A700F641C8 /* .gitignore in Resources */,
+				A97D71EC291180C600034031 /* sipping-coffee.mp3 in Resources */,
+				A97D71E8291180A100034031 /* bruh-sound-2.mp3 in Resources */,
+				A97D71E42911807300034031 /* perfect-fart.mp3 in Resources */,
 				A07CC49A28D1099500F641C8 /* Assets.xcassets in Resources */,
 				A07CC4C228D109BC00F641C8 /* .gitattributes in Resources */,
 			);
@@ -317,7 +351,9 @@
 				A976D37F28D1186800E04388 /* user_assumptions.swift in Sources */,
 				A07CC49828D1099400F641C8 /* ContentView.swift in Sources */,
 				A07CC49628D1099400F641C8 /* ScholarFoxv1_0App.swift in Sources */,
+				A9BF8AC729145AC200B51072 /* old_code.swift in Sources */,
 				A9744D0628D3C4F300210D21 /* SwipeViewGPA.swift in Sources */,
+				A91080C329102F4000A76E86 /* Funny.swift in Sources */,
 				A91080C1290F59E900A76E86 /* SwipeViewMajors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,8 +11,8 @@ struct CardView: View {
     @State var card: card_info
     
     // MARK: - Drawing Constant
-    let cardGradient = Gradient(colors: [Color.black.opacity(0.0), Color.black.opacity(0.5)])
-    
+//    let cardGradient = Gradient(colors: [Color.black.opacity(0.0), Color.black.opacity(0.5)])
+//
     var body: some View {
         
         // for the images alignment
@@ -22,23 +22,27 @@ struct CardView: View {
                 Image(card.image)
                     .resizable()
                     .frame(height: 400)
-            
+                    .opacity(0.8)
             }
             .background(.white)
             .cornerRadius(25)
 
-            //  csuf text
+            // the card text
+            //alignment: .leading,
             VStack(alignment: .leading, spacing: 12) {
-                // csuf text
+                // the name of the image
                 Text(card.name)
                     .font(.title)
                     .fontWeight(.black)
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                     .fontWeight(.bold)
+                    //.padding()
                 
+                // small descriptions
                 Text(card.descrption)
                     .font(.body)
-                    .foregroundColor(.white)
+                    .fontWeight(.black)
+                    .foregroundColor(.black)
                     .fontWeight(.bold)
             }
             .padding(.bottom, 50)

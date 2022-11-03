@@ -7,96 +7,58 @@
 
 import SwiftUI
 
-// a struct for schools
-
-
 struct user_assumptions: View {
-    // @State private var gpa: Double = 0
-    @AppStorage("gpa") var gpa: Double = 0
-    // @State private var major: String = ""
+    @AppStorage("gpa") var gpa: Double = 0.0
     @AppStorage("major") var major: String = ""
     @State private var showing = false
     
     // shows the phone
     var body: some View {
-        // other code
-        // VStack {
         NavigationView {
-            ZStack(alignment: .bottomLeading) {
-                VStack {
-                    Text("Assumptions Page")
-                        .font(.title)
-                        .fontWeight(.black)
-                        .foregroundColor(.black)
-                        .border(Color.purple, width: 4)
-                        .padding()
-                    
-                    // Section(header: Text("GPA")) {
-                    Text("GPA")
+            VStack(spacing: .zero) {
+                // Fun - trial code
+                Button(action: {
+                    playSound()
+                }) {
+                    Image(systemName: "house.fill")
+                    Text("MAGIC")
                         .font(.headline)
                         .fontWeight(.black)
-                        .foregroundColor(.black)
-                        .padding()
+                        .foregroundStyle(Color.black)
+                }
+                
+                // main code
+                Form {
                     
-                    // GPA text field
-                    TextField("Enter Your GPA:", value: $gpa, format: .number)
-                        .keyboardType(.decimalPad)
-                        .multilineTextAlignment(.center)
-                        // }
-                        .padding()
+                    // asking for gpa
+                    Section("GPA") {
+                        TextField("Please enter your GPA: ", value: $gpa, format: .number)
+                            .keyboardType(.decimalPad)
+                    }
                     
-                    // change screen
+                    // button to show next view for gpa
                     NavigationLink(destination: SwipeViewGPA()) {
-                        Image(systemName: "number.square.fill")
+                        Text("Enter")
                             .foregroundStyle(Color.blue)
                     }
-//                    // using a different option to change screen
-//                    Button(action: {
-//                        self.showing.toggle()
-//                    }) {
-//                        Text("show detail")
-//                    }.sheet(isPresented: $showing) {
-//                        SwipeView()
-//                    }
+                    .buttonStyle(.borderedProminent)
                     
-                    // Section(header: Text("Major")) {
-                    Text("Major")
-                        .font(.headline)
-                        .fontWeight(.black)
-                        .foregroundColor(.black)
-                        .padding()
+                    // asking for major
+                    Section("Major") {
+                        TextField("Please enter your major", text: $major)
+                            .keyboardType(.default)
+                    }
                     
-                    TextField("Enter your a major ", text: $major)
-                        //.keyboardType(.default)
-                        .multilineTextAlignment(.center)
-                        .padding()
-                    
-                    // change screen
+                    // button to show next view for major
                     NavigationLink(destination: SwipeViewMajors()) {
-                        Image(systemName: "house.fill")
+                        Text("Enter")
                             .foregroundStyle(Color.red)
                     }
-
-                    // header for school
-                    // Section(header: Text("School")) {
-//                    Text("School")
-//                        .font(.headline)
-//                        .fontWeight(.black)
-//                        .foregroundColor(.black)
-//                        .padding()
-                    // first: takes the converted amount
-                    // second: displaying the information
-//                    Text("\(assumeForGpa(gpa))")
-                    // Text("\(assumeForMajor(major))")
-                       // .padding()
                 }
-                .background(
-                    Image("sand_two")
-                        .resizable()
-                        .edgesIgnoringSafeArea(.all)
-                        .frame(width: 400, height: 850)
-                )
             }
+            // The title of the top of the page
+            .navigationTitle("Assumptions")
+            Image("school_image")
         }
     }
 }
