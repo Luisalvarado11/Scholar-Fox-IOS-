@@ -16,7 +16,6 @@ struct CSUDetails: View {
                     .resizable()
                     .scaledToFit()
             }
-                
             Group {
                 Text(csuDetail.name)
                     .font(.system(.largeTitle, design: .serif))
@@ -72,7 +71,6 @@ struct CSUDetails: View {
                 Text(csuDetail.description)
                     .font(.system(.body, design: .serif))
             }
-
             Spacer(minLength: 15)
         }
         .background(

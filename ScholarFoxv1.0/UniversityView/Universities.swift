@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Universities: View {
-    //Detects finger touch on screen
+    // Detects finger touch on screen
     var hapticTouch = UIImpactFeedbackGenerator(style: .heavy)
     @State private var showModel: Bool = false
     var body: some View {
@@ -19,37 +19,35 @@ struct Universities: View {
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .padding()
-                    
+
                     Button(action: { self.showModel.toggle() }, label: {
                         Image(systemName: "info.circle")
                     })
-                
                 }
-                    Text("California State Universities")
-                        .font(.title2)
-                        .fontWeight(.bold)
-                        .multilineTextAlignment(.leading)
-                        .padding()
-                    Spacer()
+                Text("California State Universities")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.leading)
+                    .padding()
+                Spacer()
 
-                .sheet(isPresented: self.$showModel) {
-                    sample()
-                }
-              
+                    .sheet(isPresented: self.$showModel) {
+                        sample()
+                    }
+
                 // Calls in CSUScroll UI viewpage
                 CSUScoll()
                 Spacer()
 
-                    Text("University of California")
-                        .font(.title2)
-                        .fontWeight(.bold)
-                        .multilineTextAlignment(.leading)
-                        .padding()
-            
-                    // Calls in UCScroll UI viewpage
-                    UCScroll()
-                    Spacer()
+                Text("University of California")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.leading)
+                    .padding()
 
+                // Calls in UCScroll UI viewpage
+                UCScroll()
+                Spacer()
             }
         }
         .background(

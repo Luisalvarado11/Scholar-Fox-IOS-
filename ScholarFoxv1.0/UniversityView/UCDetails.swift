@@ -12,52 +12,44 @@ struct UCDetails: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .center, spacing: 0) {
+                // Image
                 Image(UCDetail.image)
                     .resizable()
                     .scaledToFit()
             }
             
             Group {
+                // Title
                 Text(UCDetail.name)
                     .font(.system(.largeTitle, design: .serif))
                     .bold()
                     .multilineTextAlignment(.center)
                     .padding(.top, 10)
                 
-                HStack(alignment: .center, spacing: 0) {
+                UCRating(UCDetail: UCDetail)
+                
+                    .padding()
+                HStack(alignment: .center, spacing: 30) {
+                    // City
                     Image(systemName: "mappin.circle.fill")
                         .foregroundColor(Color.red)
                     Text("Location: \(UCDetail.city)")
-                        .fontWeight(.medium)
+                        .font(.system(.body, design: .serif))
                     
-                    Spacer()
-                    
-                    Image(systemName: "dollarsign.circle.fill")
+                    // Campus Setting
+                    Image(systemName: "leaf.circle.fill")
                         .foregroundColor(Color.green)
-                    Text("Tuition Cost \(UCDetail.average_cost)")
-                        .fontWeight(.medium)
+                    Text("Campus Setting: \(UCDetail.campus_setting)")
+                        .font(.system(.body, design: .serif))
                 }
                 
-                Spacer(minLength: 10)
-                
-                HStack(alignment: .center, spacing: 0) {
-                    Image(systemName: "person.crop.circle.fill.badge.checkmark")
-                        .foregroundColor(Color.blue)
-                    Text("Acceptance Rate: \(UCDetail.acceptanceRating)")
-                    
-                    Spacer()
-                    
-                    Image(systemName: "dollarsign.circle.fill")
-                        .foregroundColor(Color.green)
-                    Text("Out of State Tuition: \(UCDetail.out_of_state)")
+                .padding()
+                HStack(alignment: .center, spacing: 30) {
+                    Image(systemName: "teddybear.fill")
+                        .foregroundColor(Color.brown)
+                    Text("Mascot: \(UCDetail.mascot)")
+                        .font(.system(.body, design: .serif))
                 }
-                
-                HStack(alignment: .center, spacing: 0) {
-                    Image(systemName: "list.clipboard")
-                    Text("Minimum Required GPA: \(UCDetail.gpa)")
-                }
-                
-                Spacer(minLength: 25)
                 
                 Link(destination: URL(string: UCDetail.web)!, label: {
                     Label(
@@ -66,23 +58,24 @@ struct UCDetails: View {
                         },
                         icon: { Image(systemName: "paperplane.fill") })
                 })
-                Spacer(minLength: 25)
+                .padding()
                 
-                Text(UCDetail.description)
-                    .font(.system(.body, design: .serif))
+                Divider()
+                    .frame(height: 4)
+                
+                admissions(UCDetail: UCDetail)
+
+                Divider()
+                    .frame(height: 4)
+                
+                Financial(UCDetail: UCDetail)
             }
-            
-            Spacer(minLength: 15)
-            
-//            Text("Recommendations")
-//                .font(.title3)
-//                .fontWeight(.semibold)
         }
-        .background(
-            Image("Sand")
-                .resizable()
-                .edgesIgnoringSafeArea(.all)
-                .frame(width: 450, height: 850))
+//        .background(
+//            Image("Sand")
+//                .resizable()
+//                .edgesIgnoringSafeArea(.all)
+//                .frame(width: 450, height: 850))
     }
 }
 

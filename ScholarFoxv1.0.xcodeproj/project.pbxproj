@@ -25,6 +25,9 @@
 		A07FCD2B28D3A2C200817985 /* CSUScoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07FCD2A28D3A2C200817985 /* CSUScoll.swift */; };
 		A07FCD2D28D3C51D00817985 /* UCCardview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07FCD2C28D3C51D00817985 /* UCCardview.swift */; };
 		A0C3B53928D9710300171DBC /* UCScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3B53828D9710300171DBC /* UCScroll.swift */; };
+		A0DA9BE5291756E0005F0185 /* UCRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA9BE4291756E0005F0185 /* UCRating.swift */; };
+		A0DA9BE7291758D1005F0185 /* admissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA9BE6291758D1005F0185 /* admissions.swift */; };
+		A0DA9BE9291759D3005F0185 /* Financial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA9BE8291759D3005F0185 /* Financial.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,9 @@
 		A07FCD2A28D3A2C200817985 /* CSUScoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSUScoll.swift; sourceTree = "<group>"; };
 		A07FCD2C28D3C51D00817985 /* UCCardview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCCardview.swift; sourceTree = "<group>"; };
 		A0C3B53828D9710300171DBC /* UCScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCScroll.swift; sourceTree = "<group>"; };
+		A0DA9BE4291756E0005F0185 /* UCRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCRating.swift; sourceTree = "<group>"; };
+		A0DA9BE6291758D1005F0185 /* admissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = admissions.swift; sourceTree = "<group>"; };
+		A0DA9BE8291759D3005F0185 /* Financial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Financial.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +177,9 @@
 				A07FCD2A28D3A2C200817985 /* CSUScoll.swift */,
 				A07FCD2C28D3C51D00817985 /* UCCardview.swift */,
 				A004D17B28E4CE8E00C5A5E1 /* UCDetails.swift */,
+				A0DA9BE8291759D3005F0185 /* Financial.swift */,
+				A0DA9BE6291758D1005F0185 /* admissions.swift */,
+				A0DA9BE4291756E0005F0185 /* UCRating.swift */,
 				A0C3B53828D9710300171DBC /* UCScroll.swift */,
 			);
 			path = UniversityView;
@@ -309,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0C3B53928D9710300171DBC /* UCScroll.swift in Sources */,
+				A0DA9BE7291758D1005F0185 /* admissions.swift in Sources */,
 				A004D17828E4232C00C5A5E1 /* CSUDetails.swift in Sources */,
 				A004D17C28E4CE8E00C5A5E1 /* UCDetails.swift in Sources */,
 				A063B43928F8B48A00ADAAAE /* sample.swift in Sources */,
@@ -316,8 +326,10 @@
 				A07FCD2B28D3A2C200817985 /* CSUScoll.swift in Sources */,
 				A07FCD2D28D3C51D00817985 /* UCCardview.swift in Sources */,
 				A07CC4C828D10CBE00F641C8 /* University.swift in Sources */,
+				A0DA9BE9291759D3005F0185 /* Financial.swift in Sources */,
 				A07CC49828D1099400F641C8 /* ContentView.swift in Sources */,
 				A07FCD2928D2E80C00817985 /* CSUCardView.swift in Sources */,
+				A0DA9BE5291756E0005F0185 /* UCRating.swift in Sources */,
 				A07CC49628D1099400F641C8 /* ScholarFoxv1_0App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
