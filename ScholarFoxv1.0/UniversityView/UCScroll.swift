@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct UCScroll: View {
-    var ucs: [Uuniversity] = uc
+    var ucs: [University] = uc
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {

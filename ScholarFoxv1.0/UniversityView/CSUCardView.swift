@@ -27,11 +27,6 @@ struct CSUCardView: View {
                         .font(.system(.title, design: .serif))
                         .fontWeight(.bold)
                         .lineLimit(2)
-                
-//                Text(csucard.)
-//                    .foregroundColor(Color.black)
-//                    .italic()
-//                    .lineLimit(2)
                 }
             }
             .padding()

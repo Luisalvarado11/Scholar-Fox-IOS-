@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct UCDetails: View {
-    var UCDetail: Uuniversity
+    var UCDetail: University
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .center, spacing: 0) {
@@ -71,11 +72,6 @@ struct UCDetails: View {
                 Financial(UCDetail: UCDetail)
             }
         }
-//        .background(
-//            Image("Sand")
-//                .resizable()
-//                .edgesIgnoringSafeArea(.all)
-//                .frame(width: 450, height: 850))
     }
 }
 

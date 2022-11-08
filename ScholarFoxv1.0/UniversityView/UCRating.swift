@@ -8,10 +8,22 @@
 import SwiftUI
 
 struct UCRating: View {
-    var UCDetail: Uuniversity
+    var UCDetail: University
     var body: some View {
         HStack(alignment: .center, spacing: 5) {
             ForEach(1 ... (Int(UCDetail.rating)), id: \.self) { _ in
+                Image(systemName: "star.fill")
+                    .foregroundColor(Color.orange)
+            }
+        }
+    }
+}
+
+struct CSURating: View {
+    var csuDetail: University
+    var body: some View {
+        HStack(alignment: .center, spacing: 5) {
+            ForEach(1 ... (Int(csuDetail.rating)), id: \.self) { _ in
                 Image(systemName: "star.fill")
                     .foregroundColor(Color.orange)
             }

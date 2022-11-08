@@ -12,52 +12,46 @@ struct CSUDetails: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .center, spacing: 0) {
+                // Image
                 Image(csuDetail.image)
                     .resizable()
                     .scaledToFit()
             }
             Group {
+                // title
                 Text(csuDetail.name)
                     .font(.system(.largeTitle, design: .serif))
                     .bold()
                     .multilineTextAlignment(.center)
-                    .padding(.top, 5)
-                    .padding(.bottom, 5)
-                    
-                HStack(alignment: .center, spacing: 0) {
+                    .padding(.top, 10)
+                
+                // displays the rating's of the schools
+                CSURating(csuDetail: csuDetail)
+                
+                    .padding()
+                HStack(alignment: .center, spacing: 30) {
                     Image(systemName: "mappin.circle.fill")
                         .foregroundColor(Color.red)
                     Text("Location: \(csuDetail.city)")
+                        .font(.system(.body, design: .serif))
                     
-                    Spacer()
-                    
-                    Image(systemName: "person.crop.circle.fill.badge.checkmark")
-                        .foregroundColor(Color.blue)
-                    Text("Acceptance: \(csuDetail.acceptanceRating)")
-                }
-                    
-                Spacer(minLength: 10)
-                    
-                HStack(alignment: .center, spacing: 0) {
-                    Image(systemName: "dollarsign.circle.fill")
+                    // Campus Setting
+                    Image(systemName: "leaf.circle.fill")
                         .foregroundColor(Color.green)
-                    Text("Tuition Cost \(csuDetail.average_cost)")
-                        
-                    Spacer()
-                        
-                    Image(systemName: "dollarsign.circle.fill")
-                        .foregroundColor(Color.green)
-                    Text("Out of State Tuition: \(csuDetail.out_of_state)")
-                }
-                Spacer(minLength: 10)
-                
-                HStack(alignment: .center, spacing: 0) {
-                    Image(systemName: "list.clipboard")
-                    Text("Required GPA: \(csuDetail.gpa)")
+                    Text("Campus Setting: \(csuDetail.campus_setting)")
+                        .font(.system(.body, design: .serif))
                 }
                 
-                Spacer(minLength: 25)
-                    
+                .padding()
+                
+                HStack(alignment: .center, spacing: 30) {
+                    Image(systemName: "teddybear.fill")
+                        .foregroundColor(Color.brown)
+                    Text("Mascot: \(csuDetail.mascot)")
+                        .font(.system(.body, design: .serif))
+                }
+
+                // Displays the Link for website
                 Link(destination: URL(string: csuDetail.web)!, label: {
                     Label(
                         title: { Text("Apply")
@@ -65,19 +59,24 @@ struct CSUDetails: View {
                         },
                         icon: { Image(systemName: "paperplane.fill") })
                 })
+                .padding()
                 
-                Spacer(minLength: 25)
+                Divider()
+                    .frame(height: 4)
+                
+                csuadmissions(csuDetail: csuDetail)
+                
+                Divider()
+                    .frame(height: 4)
                     
-                Text(csuDetail.description)
-                    .font(.system(.body, design: .serif))
+                csuFinancial(csuDetail: csuDetail)
             }
-            Spacer(minLength: 15)
         }
-        .background(
-            Image("Sand")
-                .resizable()
-                .edgesIgnoringSafeArea(.all)
-                .frame(width: 450, height: 850))
+//        .background(
+//            Image("Sand")
+//                .resizable()
+//                .edgesIgnoringSafeArea(.all)
+//                .frame(width: 450, height: 850))
     }
 }
 

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct UCCardview: View {
-    var uccard: Uuniversity
+    var uccard: University
 
     var hapticTouch = UIImpactFeedbackGenerator(style: .heavy)
 
@@ -21,10 +21,6 @@ struct UCCardview: View {
                     .resizable()
                      .scaledToFit()
                      .cornerRadius(25)
-//                    .overlay {
-//                        Text(uccard.name)
-//                            .padding()
-//                    }
 
                 VStack(alignment: .leading, spacing: 12) {
                     Text(uccard.name)
