@@ -16,6 +16,10 @@ struct ScholarFoxv1_0App: App {
                     .tabItem {
                         Label("University View",systemImage: "books.vertical.fill" )
                     }
+                user_assumptions()
+                    .tabItem {
+                        Label("Assumptions", systemImage: "")
+                    }
             }
         }
     }
