@@ -32,5 +32,13 @@ class ScholarFoxv1_0Tests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testGPAInput() {
+        // XCTAssertEqual(<#T##() -> T#>, <#T##() -> T#>)
+    }
+    
+    func testMajorInput() {
+        
+    }
 
 }

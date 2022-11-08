@@ -10,7 +10,6 @@ import SwiftUI
 struct user_assumptions: View {
     @AppStorage("gpa") var gpa: Double = 0.0
     @AppStorage("major") var major: String = ""
-    @State private var showing = false
     
     // shows the phone
     var body: some View {
@@ -33,7 +32,8 @@ struct user_assumptions: View {
                         Text("Enter")
                             .foregroundStyle(Color.blue)
                     }
-                    .buttonStyle(.borderedProminent)
+                    
+                    // .buttonStyle(.borderedProminent)
                     
                     // asking for major
                     Section("Major") {
