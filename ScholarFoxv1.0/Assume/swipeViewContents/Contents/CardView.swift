@@ -23,7 +23,7 @@ struct CardView: View {
                 Image(card.image)
                     .resizable()
                     .frame(height: 400)
-                    .opacity(0.8)
+                    .opacity(0.7)
             }
             .background(.white)
             .cornerRadius(25)
@@ -37,16 +37,25 @@ struct CardView: View {
                     .fontWeight(.black)
                     .foregroundColor(.black)
                     .fontWeight(.bold)
-                    .padding()
                 
-//                 small descriptions
-                Text(card.descrption)
-                    .font(.body)
-                    .fontWeight(.black)
-                    .foregroundColor(.black)
-                    .fontWeight(.bold)
+                HStack() {
+                    // images mascot for the schools
+                    Image(card.mascotImage)
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .shadow(radius: 10)
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Color.orange, lineWidth: 2))
+                    
+                    // mascots for the school
+                    Text(card.mascot)
+                        .font(.body)
+                        .fontWeight(.black)
+                        .foregroundColor(.black)
+                        .fontWeight(.bold)
+                }
             }
-            .padding(.bottom, 50)
+            .padding(.bottom, 15)
             .padding(.leading, 10)
             
         }

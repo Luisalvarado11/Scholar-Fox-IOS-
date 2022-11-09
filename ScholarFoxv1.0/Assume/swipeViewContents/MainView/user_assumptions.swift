@@ -36,7 +36,7 @@ struct user_assumptions: View {
                     // .buttonStyle(.borderedProminent)
                     
                     // asking for major
-                    Section("Major") {
+                    Section("Popular Major") {
                         TextField("Please enter your major", text: $major)
                             .keyboardType(.default)
                     }
@@ -49,7 +49,7 @@ struct user_assumptions: View {
                 }
             }
             .background(
-                Image("sand_two")
+                Image("Sand")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
             )
