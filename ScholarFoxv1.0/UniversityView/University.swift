@@ -42,38 +42,11 @@ struct University: Identifiable {
     var mascotImages: String
 }
 
-// @Breif: A struct for the UC universities
-//struct Uuniversity: Identifiable {
-//    var id = UUID()
-//
-//    var image: String
-//
-//    var name: String
-//
-//    var city: String
-//
-//    var gpa: Double
-//
-//    var acceptanceRating: String
-//
-//    var transfer: String
-//
-//    var rating: Double
-//
-//    var average_cost: String
-//
-//    var out_of_state: String
-//
-//    var description: String
-//
-//    var mascot: String
-//
-//    var campus_setting: String
-//
-//    var academic_calander: String
-//
-//    var web: String
-//}
+//@Breif: Function for decimal place in GPA. Instead of UI displaying 4.000000 it will display 4.0
+func forTrailingZeros(temp: Double) -> String {
+    let tempvar = String(format: "%.1f", temp)
+    return tempvar
+}
 
 // @Breif: University storage for later use.
 var csu = [

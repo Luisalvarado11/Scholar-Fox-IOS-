@@ -47,7 +47,7 @@ struct admissions: View {
             .foregroundColor(Color.gray)
             .padding()
         HStack(alignment: .center, spacing: 30) {
-            Text("Students Enrolled by GPA: \(UCDetail.gpa)")
+            Text("GPA Needed: \(forTrailingZeros(temp: UCDetail.gpa))")
                 .font(.system(.body, design: .serif))
         }
     }
@@ -93,7 +93,7 @@ struct csuadmissions: View {
             .foregroundColor(Color.gray)
             .padding()
         HStack(alignment: .center, spacing: 30) {
-            Text("Students Enrolled by GPA: \(csuDetail.gpa)")
+            Text("GPA Needed: \(forTrailingZeros(temp:csuDetail.gpa))")
                 .font(.system(.body, design: .serif))
         }
     }

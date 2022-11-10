@@ -17,11 +17,11 @@ struct Financial: View {
         HStack(alignment: .center, spacing: 30) {
             Image(systemName: "dollarsign.circle.fill")
                 .foregroundColor(Color.green)
-            Text("Tuition Cost: $ \(UCDetail.average_cost)")
+            Text("In-State Tuition Cost: $ \(UCDetail.average_cost)")
                 .font(.system(.body, design: .serif))
             Image(systemName: "dollarsign.circle.fill")
                 .foregroundColor(Color.green)
-            Text("Out Of State Tuition : $\(UCDetail.out_of_state)")
+            Text("Out Of State Tuition Cost : $\(UCDetail.out_of_state)")
                 .font(.system(.body, design: .serif))
         }
         Divider()
@@ -48,11 +48,11 @@ struct csuFinancial: View {
         HStack(alignment: .center, spacing: 30) {
             Image(systemName: "dollarsign.circle.fill")
                 .foregroundColor(Color.green)
-            Text("Tuition Cost: $ \(csuDetail.average_cost)")
+            Text("In-State Tuition Cost: $ \(csuDetail.average_cost)")
                 .font(.system(.body, design: .serif))
             Image(systemName: "dollarsign.circle.fill")
                 .foregroundColor(Color.green)
-            Text("Out Of State Tuition : $\(csuDetail.out_of_state)")
+            Text("Out Of State Tuition Cost: $\(csuDetail.out_of_state)")
                 .font(.system(.body, design: .serif))
         }
         Divider()

@@ -26,7 +26,7 @@ struct CSUDetails: View {
                     .padding(.top, 10)
                 
                 // displays the rating's of the schools
-                CSURating(csuDetail: csuDetail)
+                StarsView(rating: Float(csuDetail.rating))
                 
                     .padding()
                 HStack(alignment: .center, spacing: 30) {
@@ -64,14 +64,16 @@ struct CSUDetails: View {
                 Divider()
                     .frame(height: 4)
                 
+                //calls admission page
                 csuadmissions(csuDetail: csuDetail)
                 
                 Divider()
                     .frame(height: 4)
-                    
+                //calls tuition and description section of the view
                 csuFinancial(csuDetail: csuDetail)
             }
         }
+        //loads the schools mascot onto UI page
         .background(
             Image(csuDetail.mascotImages)
                 .resizable()
@@ -83,6 +85,6 @@ struct CSUDetails: View {
 
 struct CSUDetails_Previews: PreviewProvider {
     static var previews: some View {
-        CSUDetails(csuDetail: csu[7])
+        CSUDetails(csuDetail: csu[0])
     }
 }

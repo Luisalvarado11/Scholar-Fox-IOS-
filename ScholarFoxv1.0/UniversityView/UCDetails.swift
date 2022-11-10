@@ -27,7 +27,7 @@ struct UCDetails: View {
                     .multilineTextAlignment(.center)
                     .padding(.top, 10)
                 
-                UCRating(UCDetail: UCDetail)
+                StarsView(rating: Float(UCDetail.rating))
                 
                     .padding()
                 HStack(alignment: .center, spacing: 30) {
