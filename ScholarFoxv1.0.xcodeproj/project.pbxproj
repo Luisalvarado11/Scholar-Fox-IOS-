@@ -16,6 +16,7 @@
 		A01D1D1C291B0A590076FA82 /* user_assumptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D1B291B0A590076FA82 /* user_assumptions.swift */; };
 		A01D1D1E291B0A670076FA82 /* CardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D1D291B0A670076FA82 /* CardInfo.swift */; };
 		A01D1D20291B0A6B0076FA82 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D1F291B0A6B0076FA82 /* CardView.swift */; };
+		A01D1D22291CC4D90076FA82 /* background.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D21291CC4D90076FA82 /* background.swift */; };
 		A063B43928F8B48A00ADAAAE /* sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A063B43828F8B48A00ADAAAE /* sample.swift */; };
 		A07CC49628D1099400F641C8 /* ScholarFoxv1_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CC49528D1099400F641C8 /* ScholarFoxv1_0App.swift */; };
 		A07CC49828D1099400F641C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CC49728D1099400F641C8 /* ContentView.swift */; };
@@ -68,6 +69,7 @@
 		A01D1D1B291B0A590076FA82 /* user_assumptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = user_assumptions.swift; sourceTree = "<group>"; };
 		A01D1D1D291B0A670076FA82 /* CardInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardInfo.swift; sourceTree = "<group>"; };
 		A01D1D1F291B0A6B0076FA82 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		A01D1D21291CC4D90076FA82 /* background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = background.swift; sourceTree = "<group>"; };
 		A063B43828F8B48A00ADAAAE /* sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sample.swift; sourceTree = "<group>"; };
 		A07CC49228D1099400F641C8 /* ScholarFoxv1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScholarFoxv1.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07CC49528D1099400F641C8 /* ScholarFoxv1_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScholarFoxv1_0App.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 				A0DA9BE6291758D1005F0185 /* admissions.swift */,
 				A0DA9BE4291756E0005F0185 /* UCRating.swift */,
 				A0C3B53828D9710300171DBC /* UCScroll.swift */,
+				A01D1D21291CC4D90076FA82 /* background.swift */,
 			);
 			path = UniversityView;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				A01D1D1A291B0A360076FA82 /* SwipeViewMajors.swift in Sources */,
 				A01D1D18291B0A150076FA82 /* SwipeViewGPA.swift in Sources */,
 				A01D1D12291B09BE0076FA82 /* funny.swift in Sources */,
+				A01D1D22291CC4D90076FA82 /* background.swift in Sources */,
 				A07CC4C828D10CBE00F641C8 /* University.swift in Sources */,
 				A0DA9BE9291759D3005F0185 /* Financial.swift in Sources */,
 				A01D1D20291B0A6B0076FA82 /* CardView.swift in Sources */,

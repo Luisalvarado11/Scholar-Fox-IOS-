@@ -72,16 +72,17 @@ struct CSUDetails: View {
                 csuFinancial(csuDetail: csuDetail)
             }
         }
-//        .background(
-//            Image("Sand")
-//                .resizable()
-//                .edgesIgnoringSafeArea(.all)
-//                .frame(width: 450, height: 850))
+        .background(
+            Image(csuDetail.mascotImages)
+                .resizable()
+                .edgesIgnoringSafeArea(.all)
+                .frame(width: 200, height: 200)
+                .opacity(0.2))
     }
 }
 
 struct CSUDetails_Previews: PreviewProvider {
     static var previews: some View {
-        CSUDetails(csuDetail: csu[0])
+        CSUDetails(csuDetail: csu[7])
     }
 }

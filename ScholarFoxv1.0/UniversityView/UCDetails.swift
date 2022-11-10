@@ -72,6 +72,12 @@ struct UCDetails: View {
                 Financial(UCDetail: UCDetail)
             }
         }
+        .background(
+            Image(UCDetail.mascotImages)
+                .resizable()
+                .edgesIgnoringSafeArea(.all)
+                .frame(width: 200, height: 200)
+                .opacity(0.2))
     }
 }
 

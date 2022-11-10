@@ -18,7 +18,7 @@ struct ScholarFoxv1_0App: App {
                     }
                 user_assumptions()
                     .tabItem {
-                        Label("Assumptions", systemImage: "")
+                        Label("Assumptions", systemImage: "greaterthan.circle")
                     }
             }
         }
