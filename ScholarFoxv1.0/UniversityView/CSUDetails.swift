@@ -29,6 +29,8 @@ struct CSUDetails: View {
                 StarsView(rating: Float(csuDetail.rating))
                 
                     .padding()
+                
+                //displays the location and campus setting section
                 HStack(alignment: .center, spacing: 30) {
                     Image(systemName: "mappin.circle.fill")
                         .foregroundColor(Color.red)
@@ -44,6 +46,7 @@ struct CSUDetails: View {
                 
                 .padding()
                 
+                //displays the mascot section
                 HStack(alignment: .center, spacing: 30) {
                     Image(systemName: "teddybear.fill")
                         .foregroundColor(Color.brown)
@@ -69,6 +72,7 @@ struct CSUDetails: View {
                 
                 Divider()
                     .frame(height: 4)
+                
                 //calls tuition and description section of the view
                 csuFinancial(csuDetail: csuDetail)
             }
