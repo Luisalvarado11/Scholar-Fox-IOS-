@@ -5,6 +5,5 @@ Junior year is an exciting and stressful time for high school students to apply 
 The product, ScholarFox, will be an IOS application designed with SwiftUI. The primary goal of the application is to provide students with a positive and non-stressful experience.  Our objective for the application is to help high school students approximate their chances of getting into a university of their choice. The application will have four features, but we will continue to add more as we progress.
 
 ## Features
-1. The first feature will display the student's provided stats page. 
-2. The second feature will display all California CSU and UC universities, and users can scroll through the CSU and UC universities to learn more about them. 
-3. Feature three is a university approximation generator. This feature will display the universities students have a chance to get accepted based on the stats they provided for us.
+1.The first feature allows users to explore the CSU and UC catalog to learn and help them determine which university they want to attend in the future. 
+2. Feature two is a university approximation generator. This feature will display the universities students have a chance to get accepted based on the stats they provided for us.
