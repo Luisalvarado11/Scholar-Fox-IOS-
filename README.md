@@ -7,3 +7,15 @@ The product, ScholarFox, will be an IOS application designed with SwiftUI. The p
 ## Features
 1.The first feature allows users to explore the CSU and UC catalog to learn and help them determine which university they want to attend in the future. 
 2. Feature two is a university approximation generator. This feature will display the universities students have a chance to get accepted based on the stats they provided for us.
+
+# Main-Page
+![main](img/main.png)
+
+# Detail-View
+![detail_1](img/details1.png)
+
+# Assumptions-View
+![assumptions](img/assumptionspage.png)
+
+# AssumptionsCalc-View
+![calc](img/assumptioncalc.png)
