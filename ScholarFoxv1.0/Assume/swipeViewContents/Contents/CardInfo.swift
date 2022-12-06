@@ -47,11 +47,11 @@ struct card_info: Identifiable {
             card_info(image: "Northridge", mascotImage: "matador" ,name: "CSU, Northridge", mascot: "The Matador", GPA: 3.4, MAJOR: "Psychology"),
             
             //MARK: UC schools
-            card_info(image: "Irvine", mascotImage: "anteater" ,name: "UC, Irvine", mascot: "Anteaters", GPA: 4.0, MAJOR: "Computer science"),
+            card_info(image: "Irvine", mascotImage: "anteater" ,name: "UC, Irvine", mascot: "Anteaters", GPA: 4.0, MAJOR: "Computer Science"),
             
             card_info(image: "SB", mascotImage: "gauchos" ,name: "UC, Santa Barbara", mascot: "Gauchos", GPA: 4.0, MAJOR: "Sociology"),
             
-            card_info(image: "SC", mascotImage: "sammy" ,name: "UC, Santa Cruz", mascot: "Sammy the Slug", GPA: 3.5, MAJOR: "Computer science"),
+            card_info(image: "SC", mascotImage: "sammy" ,name: "UC, Santa Cruz", mascot: "Sammy the Slug", GPA: 3.5, MAJOR: "Computer Science"),
             
             card_info(image: "Merced", mascotImage: "bobcats" ,name: "UC, Merced", mascot: "Bobcats", GPA: 3.6, MAJOR: "Biology"),
             
