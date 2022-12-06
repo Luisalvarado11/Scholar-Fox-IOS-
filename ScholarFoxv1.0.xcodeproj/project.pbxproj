@@ -223,9 +223,9 @@
 				A07FCD2A28D3A2C200817985 /* CSUScoll.swift */,
 				A07FCD2C28D3C51D00817985 /* UCCardview.swift */,
 				A004D17B28E4CE8E00C5A5E1 /* UCDetails.swift */,
+				A0C3B53828D9710300171DBC /* UCScroll.swift */,
 				A0DA9BE8291759D3005F0185 /* Financial.swift */,
 				A0DA9BE6291758D1005F0185 /* admissions.swift */,
-				A0C3B53828D9710300171DBC /* UCScroll.swift */,
 				A01D1D25291D932B0076FA82 /* StarsView.swift */,
 			);
 			path = UniversityView;

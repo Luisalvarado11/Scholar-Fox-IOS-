@@ -48,6 +48,8 @@ func forTrailingZeros(temp: Double) -> String {
     return tempvar
 }
 
+                                                                 //DATA STORED
+
 // @Breif: University storage for later use.
 var csu = [
     University(image: "Fullerton", name: "California State University, Fullerton", city: "Fullerton, CA", gpa: 3.7, acceptanceRating: "53%", transfer: "36%", rating: 3.6, average_cost: "8.3K", out_of_state: "18.9K", description: " California State University-Fullerton is a 4-year public research institution in Orange County and a campus of the Cal State system. Cal State Fullerton has the largest student body out of any California State University school and has been designated an Hispanic-serving Institution. The Fullerton campus features eight colleges offering bachelor’s degree programs in 109 fields of study. For sports fans, Cal State Fullerton fields 14 men’s and women’s athletic squads including a baseball team that frequently appears in the College World Series.", mascot: "Tuffy Titan", campus_setting: "Suburb/Town", academic_calander: "Semester", web: "http://admissions.fullerton.edu/prospectivestudent/admissions_ftf.php", mascotImages: "tuffy"),

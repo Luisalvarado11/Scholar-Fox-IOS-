@@ -26,6 +26,7 @@ struct admissions: View {
             Text("4 Year University")
                 .font(.system(.body, design: .serif))
         }
+        
         Image(systemName: "calendar.circle.fill")
             .foregroundColor(Color.purple)
             .padding()
@@ -43,9 +44,11 @@ struct admissions: View {
             Text("Transfer Rate: \(UCDetail.transfer)")
                 .font(.system(.body, design: .serif))
         }
+        
         Image(systemName: "list.clipboard")
             .foregroundColor(Color.gray)
             .padding()
+        
         HStack(alignment: .center, spacing: 30) {
             Text("GPA Needed: \(forTrailingZeros(temp: UCDetail.gpa))")
                 .font(.system(.body, design: .serif))
