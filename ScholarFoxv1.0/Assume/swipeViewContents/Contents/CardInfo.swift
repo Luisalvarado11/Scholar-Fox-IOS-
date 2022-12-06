@@ -34,36 +34,36 @@ struct card_info: Identifiable {
             
             card_info(image: "LongBeach", mascotImage: "shark" ,name: "CSU, Long Beach", mascot: "Elbee the shark", GPA: 3.61, MAJOR: "Business"),
             
-            card_info(image: "SDSU", mascotImage: "aztec" ,name: "CSU, San Diego", mascot: "Aztec Warrior", GPA: 3.7, MAJOR: "Filler"),
+            card_info(image: "SDSU", mascotImage: "aztec" ,name: "CSU, San Diego", mascot: "Aztec Warrior", GPA: 3.7, MAJOR: "Business"),
             
-            card_info(image: "DH", mascotImage: "toro" ,name: "CSU, Dominguez Hills", mascot: "Toro", GPA: 3.2, MAJOR: "Filler"),
+            card_info(image: "DH", mascotImage: "toro" ,name: "CSU, Dominguez Hills", mascot: "Toro", GPA: 3.2, MAJOR: "Business"),
             
             card_info(image: "Poly", mascotImage: "musty" ,name: "CSU, Polytechnic", mascot: "Musty the Mustang", GPA: 3.8, MAJOR: "Business"),
             
             card_info(image: "LA", mascotImage: "eddie" ,name: "CSU, LA", mascot: "Eddie the Golden Eagle", GPA: 3.43, MAJOR: "Political Science"),
             
-            card_info(image: "CPP", mascotImage: "billy" ,name: "CPP, Pomona", mascot: "Billy Bronco", GPA: 3.6, MAJOR: "filler"),
+            card_info(image: "CPP", mascotImage: "billy" ,name: "CPP, Pomona", mascot: "Billy Bronco", GPA: 3.6, MAJOR: "Business"),
             
-            card_info(image: "Northridge", mascotImage: "matador" ,name: "CSU, Northridge", mascot: "The Matador", GPA: 3.4, MAJOR: "Filler"),
+            card_info(image: "Northridge", mascotImage: "matador" ,name: "CSU, Northridge", mascot: "The Matador", GPA: 3.4, MAJOR: "Psychology"),
             
             //MARK: UC schools
-            card_info(image: "Irvine", mascotImage: "anteater" ,name: "UC, Irvine", mascot: "Anteaters", GPA: 4.0, MAJOR: "Filler"),
+            card_info(image: "Irvine", mascotImage: "anteater" ,name: "UC, Irvine", mascot: "Anteaters", GPA: 4.0, MAJOR: "Computer science"),
             
-            card_info(image: "SB", mascotImage: "gauchos" ,name: "UC, Santa Barbara", mascot: "Gauchos", GPA: 4.0, MAJOR: "Filler"),
+            card_info(image: "SB", mascotImage: "gauchos" ,name: "UC, Santa Barbara", mascot: "Gauchos", GPA: 4.0, MAJOR: "Sociology"),
             
-            card_info(image: "SC", mascotImage: "sammy" ,name: "UC, Santa Cruz", mascot: "Sammy the Slug", GPA: 3.5, MAJOR: "Filler"),
+            card_info(image: "SC", mascotImage: "sammy" ,name: "UC, Santa Cruz", mascot: "Sammy the Slug", GPA: 3.5, MAJOR: "Computer science"),
             
-            card_info(image: "Merced", mascotImage: "bobcats" ,name: "UC, Merced", mascot: "Bobcats", GPA: 3.6, MAJOR: "Filler"),
+            card_info(image: "Merced", mascotImage: "bobcats" ,name: "UC, Merced", mascot: "Bobcats", GPA: 3.6, MAJOR: "Biology"),
             
-            card_info(image: "Davis", mascotImage: "cow" ,name: "UC, Davis", mascot: "Cow", GPA: 4.0, MAJOR: "Filler"),
+            card_info(image: "Davis", mascotImage: "cow" ,name: "UC, Davis", mascot: "Cow", GPA: 4.0, MAJOR: "Psychology"),
             
-            card_info(image: "Riverside", mascotImage: "scott" ,name: "UC, Riverside", mascot: "Scott Highlander", GPA: 3.8, MAJOR: "Filler"),
+            card_info(image: "Riverside", mascotImage: "scott" ,name: "UC, Riverside", mascot: "Scott Highlander", GPA: 3.8, MAJOR: "Business"),
             
-            card_info(image: "UCLA", mascotImage: "bruin" ,name: "UC, Los Angeles", mascot: "Joe Bruin", GPA: 3.9, MAJOR: "Filler"),
+            card_info(image: "UCLA", mascotImage: "bruin" ,name: "UC, Los Angeles", mascot: "Joe Bruin", GPA: 3.9, MAJOR: "Sociology"),
             
-            card_info(image: "UCB", mascotImage: "oski" ,name: "UC, Berkeley", mascot: "Oski", GPA: 3.7, MAJOR: "Filler"),
+            card_info(image: "UCB", mascotImage: "oski" ,name: "UC, Berkeley", mascot: "Oski", GPA: 3.7, MAJOR: "Biology"),
             
-            card_info(image: "UCSD", mascotImage: "triton" ,name: "UC, San Diego", mascot: "King Triton", GPA: 4.0, MAJOR: "Filler")
+            card_info(image: "UCSD", mascotImage: "triton" ,name: "UC, San Diego", mascot: "King Triton", GPA: 4.0, MAJOR: "Cognitive Science")
         ]
     }
 }
