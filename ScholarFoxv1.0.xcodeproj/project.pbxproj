@@ -36,9 +36,10 @@
 		A0DA9BE7291758D1005F0185 /* admissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA9BE6291758D1005F0185 /* admissions.swift */; };
 		A0DA9BE9291759D3005F0185 /* Financial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA9BE8291759D3005F0185 /* Financial.swift */; };
 		A9303E52291B0EFD00C7E138 /* bruh-sound-2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A9303E4D291B0EFD00C7E138 /* bruh-sound-2.mp3 */; };
-		A9303E53291B0EFD00C7E138 /* sipping-coffee.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A9303E4E291B0EFD00C7E138 /* sipping-coffee.mp3 */; };
-		A9303E54291B0EFD00C7E138 /* bruh-sound-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A9303E4F291B0EFD00C7E138 /* bruh-sound-1.mp3 */; };
 		A9303E55291B0EFE00C7E138 /* perfect-fart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A9303E50291B0EFD00C7E138 /* perfect-fart.mp3 */; };
+		A9B6978829400109007DB778 /* hamburger.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A9B6978729400109007DB778 /* hamburger.mp3 */; };
+		A9B6978A2940074A007DB778 /* tomorrow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A9B697892940074A007DB778 /* tomorrow.mp3 */; };
+		A9B6978C294008E2007DB778 /* do-it.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A9B6978B294008E2007DB778 /* do-it.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,9 +92,10 @@
 		A0DA9BE6291758D1005F0185 /* admissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = admissions.swift; sourceTree = "<group>"; };
 		A0DA9BE8291759D3005F0185 /* Financial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Financial.swift; sourceTree = "<group>"; };
 		A9303E4D291B0EFD00C7E138 /* bruh-sound-2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bruh-sound-2.mp3"; sourceTree = "<group>"; };
-		A9303E4E291B0EFD00C7E138 /* sipping-coffee.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sipping-coffee.mp3"; sourceTree = "<group>"; };
-		A9303E4F291B0EFD00C7E138 /* bruh-sound-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bruh-sound-1.mp3"; sourceTree = "<group>"; };
 		A9303E50291B0EFD00C7E138 /* perfect-fart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "perfect-fart.mp3"; sourceTree = "<group>"; };
+		A9B6978729400109007DB778 /* hamburger.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hamburger.mp3; sourceTree = "<group>"; };
+		A9B697892940074A007DB778 /* tomorrow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tomorrow.mp3; sourceTree = "<group>"; };
+		A9B6978B294008E2007DB778 /* do-it.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "do-it.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,10 +136,11 @@
 			isa = PBXGroup;
 			children = (
 				A01D1D13291B09DB0076FA82 /* bonk.mp3 */,
-				A9303E4F291B0EFD00C7E138 /* bruh-sound-1.mp3 */,
 				A9303E4D291B0EFD00C7E138 /* bruh-sound-2.mp3 */,
+				A9B697892940074A007DB778 /* tomorrow.mp3 */,
+				A9B6978729400109007DB778 /* hamburger.mp3 */,
+				A9B6978B294008E2007DB778 /* do-it.mp3 */,
 				A9303E50291B0EFD00C7E138 /* perfect-fart.mp3 */,
-				A9303E4E291B0EFD00C7E138 /* sipping-coffee.mp3 */,
 				A01D1D11291B09BE0076FA82 /* funny.swift */,
 			);
 			path = funnyThing;
@@ -354,14 +357,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9B6978C294008E2007DB778 /* do-it.mp3 in Resources */,
+				A9B6978829400109007DB778 /* hamburger.mp3 in Resources */,
 				A07CC49D28D1099500F641C8 /* Preview Assets.xcassets in Resources */,
 				A07CC4C028D109A700F641C8 /* .gitignore in Resources */,
-				A9303E54291B0EFD00C7E138 /* bruh-sound-1.mp3 in Resources */,
 				A01D1D14291B09DB0076FA82 /* bonk.mp3 in Resources */,
+				A9B6978A2940074A007DB778 /* tomorrow.mp3 in Resources */,
 				A07CC49A28D1099500F641C8 /* Assets.xcassets in Resources */,
 				A07CC4C228D109BC00F641C8 /* .gitattributes in Resources */,
 				A9303E52291B0EFD00C7E138 /* bruh-sound-2.mp3 in Resources */,
-				A9303E53291B0EFD00C7E138 /* sipping-coffee.mp3 in Resources */,
 				A9303E55291B0EFE00C7E138 /* perfect-fart.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
