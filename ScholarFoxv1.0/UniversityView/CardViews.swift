@@ -30,6 +30,7 @@ struct CardViews: View {
                     Text(cardview.name)
                         .font(.system(.title, design: .serif))
                         .fontWeight(.bold)
+                        .italic()
                         .lineLimit(2)
                 }
             }

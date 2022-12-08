@@ -24,7 +24,8 @@ struct Universities: View {
                 }
                 Text("California State Universities")
                     .font(.title2)
-                    .fontWeight(.bold)
+                    .italic()
+                    .fontWeight(.heavy)
                     .multilineTextAlignment(.leading)
                     .padding()
                 Spacer()
@@ -36,7 +37,8 @@ struct Universities: View {
                 // Displays Text
                 Text("University of California")
                     .font(.title2)
-                    .fontWeight(.bold)
+                    .italic()
+                    .fontWeight(.heavy)
                     .multilineTextAlignment(.leading)
                     .padding()
 

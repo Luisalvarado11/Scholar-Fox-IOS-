@@ -26,6 +26,7 @@ struct Details: View {
                 Text(detail.name)
                     .font(.system(.largeTitle, design: .serif))
                     .bold()
+                    .italic()
                     .multilineTextAlignment(.center)
                     .padding(.top, 10)
                 
