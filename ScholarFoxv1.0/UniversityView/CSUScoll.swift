@@ -10,10 +10,10 @@ import SwiftUI
 struct CSUScoll: View {
     var csus: [University] = csu
     var body: some View {
-        //Allows to scroll horizontally
+        // Allows to scroll horizontally
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
-                ForEach(csus.shuffled()) { csu in  CardViews(cardview: csu)
+                ForEach(csus.shuffled()) { csu in CardViews(cardview: csu)
                     .frame(maxHeight: 350)
                     .padding(.horizontal)
                     .shadow(radius: 5)

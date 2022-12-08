@@ -34,7 +34,7 @@ struct Details: View {
                 
                     .padding()
                 
-                //displays the location and campus setting section
+                // displays the location and campus setting section
                 HStack(alignment: .center, spacing: 30) {
                     Image(systemName: "mappin.circle.fill")
                         .foregroundColor(Color.red)
@@ -50,7 +50,7 @@ struct Details: View {
                 
                 .padding()
                 
-                //displays the mascot section
+                // displays the mascot section
                 HStack(alignment: .center, spacing: 30) {
                     Image(systemName: "teddybear.fill")
                         .foregroundColor(Color.brown)
@@ -71,7 +71,7 @@ struct Details: View {
                 Divider()
                     .frame(height: 4)
                 
-                //calls admission page
+                // calls admission page
                 admissions(admin: detail)
 
                 Divider()
@@ -81,7 +81,7 @@ struct Details: View {
                 Financial(financial: detail)
             }
         }
-        //loads the schools mascot onto UI page
+        // loads the schools mascot onto UI page
         .background(
             Image(detail.mascotImages)
                 .resizable()

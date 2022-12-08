@@ -9,11 +9,11 @@ import SwiftUI
 
 struct Financial: View {
     let financial: University
-    
-    init(financial:University) {
+
+    init(financial: University) {
         self.financial = financial
     }
-    
+
     var body: some View {
         Spacer()
         Text("Tuition")
@@ -31,11 +31,11 @@ struct Financial: View {
         }
         Divider()
             .frame(height: 4)
-        
+
         Text("Description")
             .font(.system(.largeTitle, design: .serif))
-        
-        HStack(alignment: .center,spacing: 15) {
+
+        HStack(alignment: .center, spacing: 15) {
             Text(financial.description)
                 .font(.system(.body, design: .serif))
                 .padding(10)

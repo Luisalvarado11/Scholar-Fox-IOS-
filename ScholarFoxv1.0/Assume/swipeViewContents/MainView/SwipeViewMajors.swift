@@ -9,15 +9,15 @@ import SwiftUI
 
 struct SwipeViewMajors: View {
     @AppStorage("major") var major: String = ""
-    
+
     var body: some View {
         // overviews that aligns together
         // Text("\(gpa)")
         // Text("\(major)")
-        
+
         ZStack {
             ZStack {
-                ForEach(card_info.data.filter {( $0.MAJOR == major)}) { card in
+                ForEach(card_info.data.filter { $0.MAJOR == major }) { card in
                     CardView(card: card)
                 }
             }

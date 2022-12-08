@@ -38,17 +38,17 @@ struct University: Identifiable {
     var academic_calander: String
 
     var web: String
-    
+
     var mascotImages: String
 }
 
-//@Breif: Function for decimal place in GPA. Instead of UI displaying 4.000000 it will display 4.0
+// @Breif: Function for decimal place in GPA. Instead of UI displaying 4.000000 it will display 4.0
 func forTrailingZeros(temp: Double) -> String {
     let tempvar = String(format: "%.1f", temp)
     return tempvar
 }
 
-                                                                 //DATA STORED
+// DATA STORED
 
 // @Breif: University storage for later use.
 var csu = [

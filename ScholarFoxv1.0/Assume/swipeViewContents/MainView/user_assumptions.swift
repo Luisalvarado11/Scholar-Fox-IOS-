@@ -20,7 +20,6 @@ struct user_assumptions: View {
                 
                 // main code
                 Form {
-                    
                     // asking for gpa
                     Section("GPA") {
                         TextField("Please enter your GPA: ", value: $gpa, format: .number)
