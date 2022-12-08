@@ -9,6 +9,10 @@ The product, ScholarFox, will be an IOS application designed with SwiftUI. The p
 2. Feature two is a university approximation generator. This feature will display the universities students have a chance to get accepted based on the stats they provided for us.
 3. Feature Three shows general infomation of universities.
 
+# Members
+Luis Alvarado (luisalvarado@csu.fullerton.edu)
+Marco Gabriel (marcog10@csu.fullerton.edu)
+
 # Sample
 # Main Page
 ![main](img/main.png)
