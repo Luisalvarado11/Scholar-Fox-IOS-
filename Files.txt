@@ -1,16 +1,14 @@
  University View Folder Contains the following:
-1) University.swift - Contains the structure and the array that holds the infomation.\
-2) Universities.swift - loads the contents of the university that allows the users to scroll and press on card.\
-3) CSUCardview.swift - contains code to display image card following with name. Also tap gesture.\
-4) UCCardview.swift - same as previous but with CSU\
-5) UCscroll and CSU scroll - contains the code that allows users to scroll through entire csu and uc catalog\
-6) starsView.swift - code that loads the number of ratings for the school\
-7) admin and admission.swift - code that loads the data of admissions of the schools\
-8) csudetail.swift and ucdetails.swift - code that loads all the information contents of schools\
-9) sample.swift - contains general code that loads information for csu\'92s.\
-\
-Assume Folder contains the following -\
-1) Funny thing folder - contains the sounds\
-2) swipe view content folder -\
-	A) contents folder contains carding and card view.swift. Basically, contains all the schools information and loads all the information\
-	B)Mainview folder - contains all the assumptions view. (Swipe view, swipeviewmajor,user_assumptions.swift) loads all the schools depending on GPA or major most likely getting into. }
+1) University.swift - Contains the structure and the array that holds the infomation.
+2) Universities.swift - loads the contents of the university that allows the users to scroll and press on card.
+3) CardView.swift - Loads the contents of the university that displays the image and name of the school. Both UC and CSU use this.
+4) UCscroll and CSU scroll - contains the code that allows users to scroll through entire csu and uc catalog
+5) starsView.swift - code that loads the number of ratings for the school
+6) admissions.swift - code that loads the admission data for both csu and uc schools.
+7) details.swift- code that loads all the information contents of schools for both csu and uc
+
+Assume Folder contains the following -
+1) Funny thing folder - contains the funny sounds
+2) swipe view content folder -
+	A)contents folder contains carding and card view.swift. Basically, contains all the schools information and loads all the information\
+	B)Mainview folder - contains all the assumptions view. (Swipe view, swipeviewmajor,user_assumptions.swift) loads all the schools depending on GPA or major most likely getting into. 
