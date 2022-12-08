@@ -1,58 +1,65 @@
 //
-//  UCDetails.swift
+//  Details.swift
 //  ScholarFoxv1.0
 //
-//  Created by Luis Alvarado on 9/28/22.
+//  Created by Luis Alvarado on 12/8/22.
 //
 
 import SwiftUI
 
-struct UCDetails: View {
-    var UCDetail: University
+struct Details: View {
+    let detail: University
+    
+    init(detail: University) {
+        self.detail = detail
+    }
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .center, spacing: 0) {
-                // Image
-                Image(UCDetail.image)
+                Image(detail.image)
                     .resizable()
                     .scaledToFit()
             }
-            
             Group {
-                // Title
-                Text(UCDetail.name)
+                // title
+                Text(detail.name)
                     .font(.system(.largeTitle, design: .serif))
                     .bold()
                     .multilineTextAlignment(.center)
                     .padding(.top, 10)
                 
-                StarsView(rating: Float(UCDetail.rating))
+                // displays the rating's of the schools
+                StarsView(rating: Float(detail.rating))
                 
                     .padding()
+                
+                //displays the location and campus setting section
                 HStack(alignment: .center, spacing: 30) {
-                    // City
                     Image(systemName: "mappin.circle.fill")
                         .foregroundColor(Color.red)
-                    Text("Location: \(UCDetail.city)")
+                    Text("Location: \(detail.city)")
                         .font(.system(.body, design: .serif))
                     
                     // Campus Setting
                     Image(systemName: "leaf.circle.fill")
                         .foregroundColor(Color.green)
-                    Text("Campus Setting: \(UCDetail.campus_setting)")
+                    Text("Campus Setting: \(detail.campus_setting)")
                         .font(.system(.body, design: .serif))
                 }
                 
                 .padding()
+                
+                //displays the mascot section
                 HStack(alignment: .center, spacing: 30) {
                     Image(systemName: "teddybear.fill")
                         .foregroundColor(Color.brown)
-                    Text("Mascot: \(UCDetail.mascot)")
+                    Text("Mascot: \(detail.mascot)")
                         .font(.system(.body, design: .serif))
                 }
-                
-                Link(destination: URL(string: UCDetail.web)!, label: {
+
+                // Displays the Link for website
+                Link(destination: URL(string: detail.web)!, label: {
                     Label(
                         title: { Text("Apply")
                             .foregroundColor(Color.blue)
@@ -64,16 +71,19 @@ struct UCDetails: View {
                 Divider()
                     .frame(height: 4)
                 
-                admissions(UCDetail: UCDetail)
+                //calls admission page
+                admissions(admin: detail)
 
                 Divider()
                     .frame(height: 4)
-                
-                Financial(UCDetail: UCDetail)
+//
+//                //calls tuition and description section of the view
+                Financial(financial: detail)
             }
         }
+        //loads the schools mascot onto UI page
         .background(
-            Image(UCDetail.mascotImages)
+            Image(detail.mascotImages)
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
                 .frame(width: 200, height: 200)
@@ -81,8 +91,8 @@ struct UCDetails: View {
     }
 }
 
-struct UCDetails_Previews: PreviewProvider {
+struct Details_Previews: PreviewProvider {
     static var previews: some View {
-        UCDetails(UCDetail: uc[1])
+        Details(detail: uc[0])
     }
 }

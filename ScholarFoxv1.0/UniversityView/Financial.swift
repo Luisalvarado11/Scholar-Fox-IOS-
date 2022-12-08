@@ -8,38 +8,12 @@
 import SwiftUI
 
 struct Financial: View {
-    var UCDetail: University
-    var body: some View {
-        Spacer()
-        Text("Tuition")
-            .font(.system(.largeTitle, design: .serif))
-            .padding()
-        HStack(alignment: .center, spacing: 30) {
-            Image(systemName: "dollarsign.circle.fill")
-                .foregroundColor(Color.green)
-            Text("In-State Tuition Cost: $ \(UCDetail.average_cost)")
-                .font(.system(.body, design: .serif))
-            Image(systemName: "dollarsign.circle.fill")
-                .foregroundColor(Color.green)
-            Text("Out Of State Tuition Cost : $\(UCDetail.out_of_state)")
-                .font(.system(.body, design: .serif))
-        }
-        Divider()
-            .frame(height: 4)
-        
-        Text("Description")
-            .font(.system(.largeTitle, design: .serif))
-        
-        HStack(alignment: .center,spacing: 15) {
-            Text(UCDetail.description)
-                .font(.system(.body, design: .serif))
-                .padding(10)
-        }
+    let financial: University
+    
+    init(financial:University) {
+        self.financial = financial
     }
-}
-
-struct csuFinancial: View {
-    var csuDetail: University
+    
     var body: some View {
         Spacer()
         Text("Tuition")
@@ -48,11 +22,11 @@ struct csuFinancial: View {
         HStack(alignment: .center, spacing: 30) {
             Image(systemName: "dollarsign.circle.fill")
                 .foregroundColor(Color.green)
-            Text("In-State Tuition Cost: $ \(csuDetail.average_cost)")
+            Text("In-State Tuition Cost: $ \(financial.average_cost)")
                 .font(.system(.body, design: .serif))
             Image(systemName: "dollarsign.circle.fill")
                 .foregroundColor(Color.green)
-            Text("Out Of State Tuition Cost: $\(csuDetail.out_of_state)")
+            Text("Out Of State Tuition Cost : $\(financial.out_of_state)")
                 .font(.system(.body, design: .serif))
         }
         Divider()
@@ -62,7 +36,7 @@ struct csuFinancial: View {
             .font(.system(.largeTitle, design: .serif))
         
         HStack(alignment: .center,spacing: 15) {
-            Text(csuDetail.description)
+            Text(financial.description)
                 .font(.system(.body, design: .serif))
                 .padding(10)
         }
@@ -71,6 +45,6 @@ struct csuFinancial: View {
 
 struct Financial_Previews: PreviewProvider {
     static var previews: some View {
-        Financial(UCDetail: uc[1])
+        Financial(financial: uc[1])
     }
 }

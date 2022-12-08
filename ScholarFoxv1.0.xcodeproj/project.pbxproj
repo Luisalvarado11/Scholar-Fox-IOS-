@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A004D17828E4232C00C5A5E1 /* CSUDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004D17728E4232C00C5A5E1 /* CSUDetails.swift */; };
-		A004D17C28E4CE8E00C5A5E1 /* UCDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004D17B28E4CE8E00C5A5E1 /* UCDetails.swift */; };
 		A01D1D12291B09BE0076FA82 /* funny.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D11291B09BE0076FA82 /* funny.swift */; };
 		A01D1D14291B09DB0076FA82 /* bonk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A01D1D13291B09DB0076FA82 /* bonk.mp3 */; };
 		A01D1D18291B0A150076FA82 /* SwipeViewGPA.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01D1D17291B0A150076FA82 /* SwipeViewGPA.swift */; };
@@ -29,9 +27,9 @@
 		A07CC4C228D109BC00F641C8 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = A07CC4C128D109BC00F641C8 /* .gitattributes */; };
 		A07CC4C628D10C7C00F641C8 /* Universities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CC4C528D10C7C00F641C8 /* Universities.swift */; };
 		A07CC4C828D10CBE00F641C8 /* University.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07CC4C728D10CBE00F641C8 /* University.swift */; };
-		A07FCD2928D2E80C00817985 /* CSUCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07FCD2828D2E80C00817985 /* CSUCardView.swift */; };
 		A07FCD2B28D3A2C200817985 /* CSUScoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07FCD2A28D3A2C200817985 /* CSUScoll.swift */; };
-		A07FCD2D28D3C51D00817985 /* UCCardview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07FCD2C28D3C51D00817985 /* UCCardview.swift */; };
+		A0A229F929426C20002405B1 /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A229F829426C20002405B1 /* Details.swift */; };
+		A0A229FD2942709B002405B1 /* CardViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A229FC2942709B002405B1 /* CardViews.swift */; };
 		A0C3B53928D9710300171DBC /* UCScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3B53828D9710300171DBC /* UCScroll.swift */; };
 		A0DA9BE7291758D1005F0185 /* admissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA9BE6291758D1005F0185 /* admissions.swift */; };
 		A0DA9BE9291759D3005F0185 /* Financial.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DA9BE8291759D3005F0185 /* Financial.swift */; };
@@ -60,8 +58,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A004D17728E4232C00C5A5E1 /* CSUDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSUDetails.swift; sourceTree = "<group>"; };
-		A004D17B28E4CE8E00C5A5E1 /* UCDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCDetails.swift; sourceTree = "<group>"; };
 		A01D1D11291B09BE0076FA82 /* funny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = funny.swift; sourceTree = "<group>"; };
 		A01D1D13291B09DB0076FA82 /* bonk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bonk.mp3; sourceTree = "<group>"; };
 		A01D1D17291B0A150076FA82 /* SwipeViewGPA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewGPA.swift; sourceTree = "<group>"; };
@@ -85,9 +81,9 @@
 		A07CC4C128D109BC00F641C8 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		A07CC4C528D10C7C00F641C8 /* Universities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Universities.swift; sourceTree = "<group>"; };
 		A07CC4C728D10CBE00F641C8 /* University.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
-		A07FCD2828D2E80C00817985 /* CSUCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSUCardView.swift; sourceTree = "<group>"; };
 		A07FCD2A28D3A2C200817985 /* CSUScoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSUScoll.swift; sourceTree = "<group>"; };
-		A07FCD2C28D3C51D00817985 /* UCCardview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCCardview.swift; sourceTree = "<group>"; };
+		A0A229F829426C20002405B1 /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
+		A0A229FC2942709B002405B1 /* CardViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViews.swift; sourceTree = "<group>"; };
 		A0C3B53828D9710300171DBC /* UCScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCScroll.swift; sourceTree = "<group>"; };
 		A0DA9BE6291758D1005F0185 /* admissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = admissions.swift; sourceTree = "<group>"; };
 		A0DA9BE8291759D3005F0185 /* Financial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Financial.swift; sourceTree = "<group>"; };
@@ -221,15 +217,13 @@
 				A07CC4C728D10CBE00F641C8 /* University.swift */,
 				A07CC4C528D10C7C00F641C8 /* Universities.swift */,
 				A063B43828F8B48A00ADAAAE /* sample.swift */,
-				A07FCD2828D2E80C00817985 /* CSUCardView.swift */,
-				A004D17728E4232C00C5A5E1 /* CSUDetails.swift */,
-				A07FCD2A28D3A2C200817985 /* CSUScoll.swift */,
-				A07FCD2C28D3C51D00817985 /* UCCardview.swift */,
-				A004D17B28E4CE8E00C5A5E1 /* UCDetails.swift */,
-				A0C3B53828D9710300171DBC /* UCScroll.swift */,
+				A0A229F829426C20002405B1 /* Details.swift */,
+				A0A229FC2942709B002405B1 /* CardViews.swift */,
 				A0DA9BE8291759D3005F0185 /* Financial.swift */,
 				A0DA9BE6291758D1005F0185 /* admissions.swift */,
 				A01D1D25291D932B0076FA82 /* StarsView.swift */,
+				A0C3B53828D9710300171DBC /* UCScroll.swift */,
+				A07FCD2A28D3A2C200817985 /* CSUScoll.swift */,
 			);
 			path = UniversityView;
 			sourceTree = "<group>";
@@ -393,13 +387,11 @@
 			files = (
 				A0C3B53928D9710300171DBC /* UCScroll.swift in Sources */,
 				A0DA9BE7291758D1005F0185 /* admissions.swift in Sources */,
-				A004D17828E4232C00C5A5E1 /* CSUDetails.swift in Sources */,
-				A004D17C28E4CE8E00C5A5E1 /* UCDetails.swift in Sources */,
 				A01D1D1E291B0A670076FA82 /* CardInfo.swift in Sources */,
 				A063B43928F8B48A00ADAAAE /* sample.swift in Sources */,
 				A07CC4C628D10C7C00F641C8 /* Universities.swift in Sources */,
 				A07FCD2B28D3A2C200817985 /* CSUScoll.swift in Sources */,
-				A07FCD2D28D3C51D00817985 /* UCCardview.swift in Sources */,
+				A0A229FD2942709B002405B1 /* CardViews.swift in Sources */,
 				A01D1D1A291B0A360076FA82 /* SwipeViewMajors.swift in Sources */,
 				A01D1D18291B0A150076FA82 /* SwipeViewGPA.swift in Sources */,
 				A01D1D12291B09BE0076FA82 /* funny.swift in Sources */,
@@ -408,9 +400,9 @@
 				A0DA9BE9291759D3005F0185 /* Financial.swift in Sources */,
 				A01D1D20291B0A6B0076FA82 /* CardView.swift in Sources */,
 				A07CC49828D1099400F641C8 /* ContentView.swift in Sources */,
-				A07FCD2928D2E80C00817985 /* CSUCardView.swift in Sources */,
 				A01D1D1C291B0A590076FA82 /* user_assumptions.swift in Sources */,
 				A07CC49628D1099400F641C8 /* ScholarFoxv1_0App.swift in Sources */,
+				A0A229F929426C20002405B1 /* Details.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

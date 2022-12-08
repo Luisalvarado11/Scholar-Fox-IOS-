@@ -13,8 +13,8 @@ struct CSUScoll: View {
         //Allows to scroll horizontally
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
-                ForEach(csus) { csu in  CSUCardView(csucard: csu)
-                    .frame(maxHeight: 400)
+                ForEach(csus.shuffled()) { csu in  CardViews(cardview: csu)
+                    .frame(maxHeight: 350)
                     .padding(.horizontal)
                     .shadow(radius: 5)
                 }

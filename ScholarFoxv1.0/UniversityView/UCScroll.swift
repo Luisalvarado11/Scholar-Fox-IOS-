@@ -12,10 +12,9 @@ struct UCScroll: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
-                ForEach(ucs.shuffled()) { uc in UCCardview(uccard: uc)
-
+                ForEach(ucs.shuffled()) { uc in CardViews(cardview: uc)
                 }
-                .frame(maxHeight: 400)
+                .frame(maxHeight: 350)
                 .scaledToFit()
                 .padding(.horizontal)
                 .shadow(radius: 5)
